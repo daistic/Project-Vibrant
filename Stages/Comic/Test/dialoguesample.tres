@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=6 format=3 uid="uid://ceciey5lhgr6a"]
+
+[ext_resource type="Script" uid="uid://icyiph7n2cnx" path="res://Entities/Dialogue/DialogueResource.gd" id="1_pd5hl"]
+[ext_resource type="Script" uid="uid://bf5o4ybofcud1" path="res://Entities/Dialogue/DialogueStruct.gd" id="2_op4yp"]
+
+[sub_resource type="Resource" id="Resource_pd5hl"]
+script = ExtResource("2_op4yp")
+text = "test"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_op4yp"]
+script = ExtResource("2_op4yp")
+text = "long test"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_yrmf5"]
+script = ExtResource("2_op4yp")
+text = "long long test"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[resource]
+script = ExtResource("1_pd5hl")
+lines = Array[ExtResource("2_op4yp")]([SubResource("Resource_pd5hl"), SubResource("Resource_op4yp"), SubResource("Resource_yrmf5")])
+metadata/_custom_type_script = "uid://icyiph7n2cnx"

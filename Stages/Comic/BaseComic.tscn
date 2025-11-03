@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://dcso33gyulutw"]
+
+[ext_resource type="Script" uid="uid://cqiogfq8sk4q4" path="res://Stages/Comic/Comic.gd" id="1_3dhto"]
+[ext_resource type="Resource" uid="uid://ceciey5lhgr6a" path="res://Stages/Comic/Test/dialoguesample.tres" id="2_27l8w"]
+[ext_resource type="FontFile" uid="uid://bp56272obuwum" path="res://Assets/Fonts/RetroBritish-DemoVersion-Regular.ttf" id="3_27l8w"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_vsjab"]
+font = ExtResource("3_27l8w")
+font_size = 32
+
+[node name="BaseComic" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("1_3dhto")
+dialogue = ExtResource("2_27l8w")
+
+[node name="LineLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+label_settings = SubResource("LabelSettings_vsjab")
+
+[node name="TypingTimer" type="Timer" parent="."]
+wait_time = 0.05
+one_shot = true
+
+[connection signal="timeout" from="TypingTimer" to="." method="_on_timer_timeout"]
