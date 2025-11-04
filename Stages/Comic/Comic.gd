@@ -1,7 +1,16 @@
+class_name Comic
+
 extends Control
 
+@onready var illustration: TextureRect = $PanelParent/Illustration
+@onready var illustration_2: TextureRect = $PanelParent/Illustration2
+
+@onready var text_area: TextureRect = $TextArea
+@onready var speaker_label: Label = $TextArea/MarginContainer/VBoxContainer/SpeakerLabel
+@onready var line_label: Label = $TextArea/MarginContainer/VBoxContainer/LineLabel
+
 @onready var typing_timer: Timer = $TypingTimer
-@onready var line_label: Label = $LineLabel
+@onready var comic_animation: AnimationPlayer = $ComicAnimation
 
 @export var dialogue: DialogueResource
 
@@ -12,12 +21,26 @@ var is_typing: bool = false
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("advance"):
-		if is_typing == false:
-			start_typing(dialogue.lines[line_index].text)
-		else:
-			finish_typing()
+		_handle_line_events()
 
-func start_typing(new_text: String) -> void:
+func _handle_line_events() -> void:
+	match dialogue.lines[line_index].line_event:
+		DialogueStruct.EVENTS.PANEL_CHANGE:
+			comic_animation.play("Change Panel")
+		DialogueStruct.EVENTS.FADE_IN:
+			comic_animation.play("Fade In")
+		_:
+			_handle_text_area()
+
+func _handle_text_area() -> void:
+	if is_typing == false:
+		speaker_label.text = dialogue.lines[line_index].speaker_name
+		_start_typing(dialogue.lines[line_index].text)
+	else:
+		_finish_typing()
+
+func _start_typing(new_text: String) -> void:
+	text_area.show()
 	text = new_text
 	line_label.text = ""
 	letter_index = 0
@@ -29,15 +52,30 @@ func _type_text() -> void:
 	letter_index += 1
 	
 	if letter_index >= text.length():
-		finish_typing()
+		_finish_typing()
 	else:
 		typing_timer.start()
 
-func finish_typing() -> void:
+func _finish_typing() -> void:
+	text_area.show()
 	line_label.text = text
 	line_index += 1
 	is_typing = false
 	typing_timer.stop()
+
+func _new_panel_setup() -> void:
+	illustration_2.texture = dialogue.lines[line_index].panel
+
+func _new_panel_finished_animating() -> void:
+	illustration.texture = dialogue.lines[line_index].panel
+	illustration.self_modulate = Color(1, 1, 1, 1)
+	_handle_text_area()
+
+func _direct_panel_change() -> void:
+	illustration.texture = dialogue.lines[line_index].panel
+
+func _next_line_index() -> void:
+	line_index += 1
 
 func _on_timer_timeout() -> void:
 	_type_text()

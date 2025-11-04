@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://b5yw76s4mvl7y"]
+
+[ext_resource type="PackedScene" uid="uid://dcso33gyulutw" path="res://Stages/Comic/BaseComic.tscn" id="1_5dx8b"]
+
+[node name="TestComic" instance=ExtResource("1_5dx8b")]
