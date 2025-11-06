@@ -1,0 +1,7 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://bmky0j7y04kum"]
+
+[ext_resource type="FontFile" uid="uid://bxr12aee8vmc4" path="res://Assets/Fonts/Storyboo.TTF" id="1_okt2x"]
+
+[resource]
+font = ExtResource("1_okt2x")
+font_size = 22

@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="DialogueResource" load_steps=9 format=3 uid="uid://ceciey5lhgr6a"]
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=11 format=3 uid="uid://ceciey5lhgr6a"]
 
 [ext_resource type="Script" uid="uid://icyiph7n2cnx" path="res://Entities/Dialogue/DialogueResource.gd" id="1_pd5hl"]
 [ext_resource type="Script" uid="uid://bf5o4ybofcud1" path="res://Entities/Dialogue/DialogueStruct.gd" id="2_op4yp"]
@@ -28,10 +28,24 @@ script = ExtResource("2_op4yp")
 speaker_name = "Blue"
 text = "Tis Change"
 panel = ExtResource("3_6ta1n")
+line_event = 3
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_qhthu"]
+script = ExtResource("2_op4yp")
+speaker_name = "Yahooo"
+text = "bb"
+panel = ExtResource("2_yrmf5")
 line_event = 2
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_gl3qo"]
+script = ExtResource("2_op4yp")
+speaker_name = "asaa"
+text = "monolo"
 metadata/_custom_type_script = "uid://bf5o4ybofcud1"
 
 [resource]
 script = ExtResource("1_pd5hl")
-lines = Array[ExtResource("2_op4yp")]([SubResource("Resource_pd5hl"), SubResource("Resource_op4yp"), SubResource("Resource_yrmf5"), SubResource("Resource_6ta1n")])
+lines = Array[ExtResource("2_op4yp")]([SubResource("Resource_pd5hl"), SubResource("Resource_op4yp"), SubResource("Resource_yrmf5"), SubResource("Resource_6ta1n"), SubResource("Resource_qhthu"), SubResource("Resource_gl3qo")])
 metadata/_custom_type_script = "uid://icyiph7n2cnx"

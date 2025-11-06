@@ -1,6 +1,6 @@
-[gd_scene format=3 uid="uid://dma2xa2vhpt7m"]
+[gd_scene format=3 uid="uid://daggm4ioimut0"]
 
-[node name="Control" type="Control"]
+[node name="PuzzleEntry" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0

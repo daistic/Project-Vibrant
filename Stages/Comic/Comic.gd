@@ -24,12 +24,16 @@ func _unhandled_input(event: InputEvent) -> void:
 		_handle_line_events()
 
 func _handle_line_events() -> void:
+	if line_index >= dialogue.lines.size():
+		GameManager.go_to_puzzle_scene()
+		return
+	
 	match dialogue.lines[line_index].line_event:
 		DialogueStruct.EVENTS.PANEL_CHANGE:
 			comic_animation.play("Change Panel")
 		DialogueStruct.EVENTS.FADE_IN:
 			comic_animation.play("Fade In")
-		_:
+		DialogueStruct.EVENTS.NONE:
 			_handle_text_area()
 
 func _handle_text_area() -> void:
@@ -68,7 +72,7 @@ func _new_panel_setup() -> void:
 
 func _new_panel_finished_animating() -> void:
 	illustration.texture = dialogue.lines[line_index].panel
-	illustration.self_modulate = Color(1, 1, 1, 1)
+	illustration.self_modulate = Color(1.0, 1.0, 1.0, 1.0)
 	_handle_text_area()
 
 func _direct_panel_change() -> void:

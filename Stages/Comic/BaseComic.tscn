@@ -1,14 +1,9 @@
-[gd_scene load_steps=14 format=3 uid="uid://dcso33gyulutw"]
+[gd_scene load_steps=13 format=3 uid="uid://dcso33gyulutw"]
 
 [ext_resource type="Script" uid="uid://cqiogfq8sk4q4" path="res://Stages/Comic/Comic.gd" id="1_3dhto"]
 [ext_resource type="Resource" uid="uid://ceciey5lhgr6a" path="res://Stages/Comic/Test/dialoguesample.tres" id="2_27l8w"]
 [ext_resource type="FontFile" uid="uid://bxr12aee8vmc4" path="res://Assets/Fonts/Storyboo.TTF" id="4_vsjab"]
-
-[sub_resource type="Gradient" id="Gradient_vsjab"]
-colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
-
-[sub_resource type="GradientTexture1D" id="GradientTexture1D_w7vhx"]
-gradient = SubResource("Gradient_vsjab")
+[ext_resource type="LabelSettings" uid="uid://bmky0j7y04kum" path="res://Common/Font Resources/StoryBook_White_22.tres" id="4_w7vhx"]
 
 [sub_resource type="Gradient" id="Gradient_27l8w"]
 offsets = PackedFloat32Array(0, 0.8, 1)
@@ -25,28 +20,8 @@ metadata/_snap_enabled = true
 font = ExtResource("4_vsjab")
 font_size = 24
 
-[sub_resource type="LabelSettings" id="LabelSettings_vsjab"]
-font = ExtResource("4_vsjab")
-font_size = 22
-
-[sub_resource type="Animation" id="Animation_f6177"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("PanelParent/Illustration:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-
 [sub_resource type="Animation" id="Animation_27l8w"]
 resource_name = "Change Panel"
-length = 1.5
 step = 0.1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -137,12 +112,98 @@ tracks/2/keys = {
 "method": &"hide"
 }]
 }
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("PanelParent/Illustration2:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.7, 1.7, 2.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 0, 0, 1), Color(0, 0, 0, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_f6177"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PanelParent/Illustration:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PanelParent/Illustration:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("PanelParent/Illustration2:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_w7vhx"]
+resource_name = "Start"
+length = 1.5
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PanelParent/Illustration:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"_direct_panel_change"
+}, {
+"args": [],
+"method": &"_next_line_index"
+}]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_vsjab"]
 _data = {
 &"Change Panel": SubResource("Animation_27l8w"),
 &"Fade In": SubResource("Animation_vsjab"),
-&"RESET": SubResource("Animation_f6177")
+&"RESET": SubResource("Animation_f6177"),
+&"Start": SubResource("Animation_w7vhx")
 }
 
 [node name="BaseComic" type="Control"]
@@ -172,11 +233,11 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = SubResource("GradientTexture1D_w7vhx")
 expand_mode = 3
 
 [node name="Illustration2" type="TextureRect" parent="PanelParent"]
 self_modulate = Color(1, 1, 1, 0)
+z_index = -1
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -228,7 +289,7 @@ size_flags_horizontal = 0
 [node name="LineLabel" type="Label" parent="TextArea/MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
-label_settings = SubResource("LabelSettings_vsjab")
+label_settings = ExtResource("4_w7vhx")
 
 [node name="TypingTimer" type="Timer" parent="."]
 wait_time = 0.05
@@ -238,5 +299,6 @@ one_shot = true
 libraries = {
 &"": SubResource("AnimationLibrary_vsjab")
 }
+autoplay = "Start"
 
 [connection signal="timeout" from="TypingTimer" to="." method="_on_timer_timeout"]

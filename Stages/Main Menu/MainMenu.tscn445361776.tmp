@@ -1,0 +1,86 @@
+[gd_scene load_steps=6 format=3 uid="uid://bl2upi75da1co"]
+
+[ext_resource type="Script" uid="uid://bjyptr77qfx3u" path="res://Stages/Main Menu/MainMenu.gd" id="1_hvo74"]
+[ext_resource type="Texture2D" uid="uid://bk86bt7xokts0" path="res://Assets/white_texture.png" id="1_ipsnj"]
+[ext_resource type="FontFile" uid="uid://bxr12aee8vmc4" path="res://Assets/Fonts/Storyboo.TTF" id="2_rgfg6"]
+[ext_resource type="Script" uid="uid://x0poab2ufpp8" path="res://Common/GameButton.gd" id="3_7gk3n"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_hvo74"]
+font = ExtResource("2_rgfg6")
+font_size = 22
+font_color = Color(0, 0, 0, 1)
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("1_hvo74")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_bottom = 15
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_constants/separation = 15
+
+[node name="TextureButton" type="TextureButton" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 2
+texture_normal = ExtResource("1_ipsnj")
+stretch_mode = 0
+script = ExtResource("3_7gk3n")
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/TextureButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Play"
+label_settings = SubResource("LabelSettings_hvo74")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureButton2" type="TextureButton" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 2
+texture_normal = ExtResource("1_ipsnj")
+stretch_mode = 0
+script = ExtResource("3_7gk3n")
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/TextureButton2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Credits"
+label_settings = SubResource("LabelSettings_hvo74")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]

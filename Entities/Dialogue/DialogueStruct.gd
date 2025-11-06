@@ -9,6 +9,7 @@ extends Resource
 
 enum EVENTS{
 	NONE,
+	START,
 	FADE_IN,
 	PANEL_CHANGE,
 	HIDE_TEXT_AREA,
