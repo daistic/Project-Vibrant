@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://fvbglxmndqo2"]
+
+[ext_resource type="PackedScene" uid="uid://fri42p2bfp5d" path="res://Entities/Puzzle Fragment/PuzzleFragment.tscn" id="1_11h8v"]
+[ext_resource type="Texture2D" uid="uid://dl30gff8r42aq" path="res://Assets/Placeholders/fragmentY placeholder.png" id="2_0bqyu"]
+[ext_resource type="PackedScene" uid="uid://tm8c3e1mkgqx" path="res://Entities/PuzzleGrid/PuzzleGrid.tscn" id="2_e7rj1"]
+[ext_resource type="Texture2D" uid="uid://cs4elfxag0sro" path="res://Assets/Placeholders/fragment2B placeholder.png" id="3_kyo16"]
+
+[node name="Puzzle1" type="Node2D"]
+
+[node name="PuzzleFragment" parent="." instance=ExtResource("1_11h8v")]
+position = Vector2(203, 435)
+
+[node name="PuzzleFragment2" parent="." instance=ExtResource("1_11h8v")]
+position = Vector2(456, 316)
+sprite = ExtResource("2_0bqyu")
+
+[node name="PuzzleFragment3" parent="." instance=ExtResource("1_11h8v")]
+position = Vector2(267, 209)
+sprite = ExtResource("3_kyo16")
+
+[node name="PuzzleGrid" parent="." instance=ExtResource("2_e7rj1")]
+position = Vector2(819, 309)

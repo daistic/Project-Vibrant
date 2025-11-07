@@ -4,7 +4,6 @@
 [ext_resource type="Script" uid="uid://bsphrfsdwkoka" path="res://Entities/Puzzle Fragment/PuzzleFragment.gd" id="1_y2dq8"]
 
 [node name="PuzzleFragment" type="Area2D"]
-position = Vector2(436, 289)
 scale = Vector2(0.5, 0.5)
 script = ExtResource("1_y2dq8")
 sprite = ExtResource("1_gg6uq")
