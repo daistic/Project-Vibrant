@@ -9,23 +9,32 @@ extends Area2D
 @onready var sprite_2d: Sprite2D = $Sprite2D
 @onready var collision_polygon_2d: CollisionPolygon2D = $CollisionPolygon2D
 
+static var currently_dragging = false
+static var last_z_index = 0
+
 var dragging: bool = false
 var offset: Vector2 = Vector2(0, 0)
 
 func _ready() -> void:
 	sprite_2d.texture = sprite
 	collision_polygon_2d.polygon = polygon_points
+	last_z_index = 0
 
 func _process(_delta: float) -> void:
 	if dragging:
 		position = get_global_mouse_position() - offset
 
 func _on_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> void:
+	if currently_dragging == true and dragging == false:
+		return
+	
 	if event.is_action_pressed("click_puzzle"):
 		dragging = true
+		currently_dragging = true
 		offset = get_global_mouse_position() - global_position
-		z_index = 1
+		last_z_index += 1
+		z_index = last_z_index
 	
 	if event.is_action_released("click_puzzle"):
 		dragging = false
-		z_index = 0
+		currently_dragging = false
