@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" uid="uid://icyiph7n2cnx" path="res://Entities/Dialogue/DialogueResource.gd" id="1_pd5hl"]
 [ext_resource type="Script" uid="uid://bf5o4ybofcud1" path="res://Entities/Dialogue/DialogueStruct.gd" id="2_op4yp"]
-[ext_resource type="Texture2D" uid="uid://bthj0e8f6opg" path="res://Assets/placeholder.jpg" id="2_yrmf5"]
-[ext_resource type="Texture2D" uid="uid://cj1f8ugmg0ojf" path="res://Assets/placeholder2.png" id="3_6ta1n"]
+[ext_resource type="Texture2D" uid="uid://bthj0e8f6opg" path="res://Assets/Placeholders/placeholder.jpg" id="2_yrmf5"]
+[ext_resource type="Texture2D" uid="uid://cj1f8ugmg0ojf" path="res://Assets/Placeholders/placeholder2.png" id="3_6ta1n"]
 
 [sub_resource type="Resource" id="Resource_pd5hl"]
 script = ExtResource("2_op4yp")
