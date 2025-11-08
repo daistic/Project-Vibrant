@@ -40,12 +40,15 @@ func _reposition_placed_fragment() -> void:
 	tween.tween_property(
 		placed_fragment, "position", self.position, 0.2
 		).set_ease(Tween.EASE_OUT)
+	
 	placed_fragment.z_index = 0
 
 func _on_area_entered(area: Area2D) -> void:
-	fragment_has_entered = true
-	entered_fragments.append(area)
+	if area is PuzzleFragment:
+		fragment_has_entered = true
+		entered_fragments.append(area)
 
 func _on_area_exited(area: Area2D) -> void:
-	fragment_has_entered = false
-	entered_fragments.erase(area)
+	if area is PuzzleFragment:
+		fragment_has_entered = false
+		entered_fragments.erase(area)

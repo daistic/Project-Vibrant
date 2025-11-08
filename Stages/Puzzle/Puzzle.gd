@@ -4,17 +4,21 @@ extends Node2D
 
 @export var puzzle_grids: Array[PuzzleGrid]
 
-var empty_grids: int
+@onready var finish_button: GameButton = $CanvasLayer/MarginContainer/FinishButton
 
-func _ready() -> void:
-	empty_grids = puzzle_grids.size()
-
-func fragment_placed() -> void:
-	empty_grids -= 1
-	
-	if empty_grids <= 0:
+func _input(event: InputEvent) -> void:
+	if event.is_action_released("click_puzzle"):
+		for grid in puzzle_grids:
+			if grid.placed_fragment == null:
+				_puzzle_unfinished()
+				return
+		
 		_puzzle_finished()
 
 func _puzzle_finished() -> void:
+	finish_button.show()
 	print("solved")
-	print(puzzle_grids[1].fragment_on_grid.name)
+	print(puzzle_grids[0].placed_fragment.name)
+
+func _puzzle_unfinished() -> void:
+	finish_button.hide()

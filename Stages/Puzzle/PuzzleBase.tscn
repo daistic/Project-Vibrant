@@ -1,25 +1,47 @@
 [gd_scene load_steps=6 format=3 uid="uid://fvbglxmndqo2"]
 
 [ext_resource type="Script" uid="uid://0s666fi80js0" path="res://Stages/Puzzle/Puzzle.gd" id="1_ad5m0"]
-[ext_resource type="PackedScene" uid="uid://fri42p2bfp5d" path="res://Entities/Puzzle Fragment/PuzzleFragment.tscn" id="1_gc6vh"]
-[ext_resource type="Texture2D" uid="uid://dl30gff8r42aq" path="res://Assets/Placeholders/fragmentY placeholder.png" id="2_ad5m0"]
-[ext_resource type="Texture2D" uid="uid://cs4elfxag0sro" path="res://Assets/Placeholders/fragment2B placeholder.png" id="3_lur0l"]
-[ext_resource type="PackedScene" uid="uid://tm8c3e1mkgqx" path="res://Entities/PuzzleGrid/PuzzleGrid.tscn" id="4_ko4bx"]
+[ext_resource type="Texture2D" uid="uid://bk86bt7xokts0" path="res://Assets/white_texture.png" id="2_gc6vh"]
+[ext_resource type="Script" uid="uid://x0poab2ufpp8" path="res://Common/GameButton.gd" id="3_ad5m0"]
+[ext_resource type="FontFile" uid="uid://bxr12aee8vmc4" path="res://Assets/Fonts/Storyboo.TTF" id="4_lur0l"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ko4bx"]
+font = ExtResource("4_lur0l")
+font_size = 22
+font_color = Color(0, 0, 0, 1)
 
 [node name="PuzzleBase" type="Node2D"]
 script = ExtResource("1_ad5m0")
 
-[node name="PuzzleFragment" parent="." instance=ExtResource("1_gc6vh")]
-position = Vector2(203, 435)
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="PuzzleFragment2" parent="." instance=ExtResource("1_gc6vh")]
-position = Vector2(456, 316)
-sprite = ExtResource("2_ad5m0")
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
 
-[node name="PuzzleFragment3" parent="." instance=ExtResource("1_gc6vh")]
-position = Vector2(267, 209)
-sprite = ExtResource("3_lur0l")
-fragment_id = 1
+[node name="FinishButton" type="TextureButton" parent="CanvasLayer/MarginContainer"]
+visible = false
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+texture_normal = ExtResource("2_gc6vh")
+stretch_mode = 0
+script = ExtResource("3_ad5m0")
 
-[node name="PuzzleGrid" parent="." instance=ExtResource("4_ko4bx")]
-position = Vector2(819, 309)
+[node name="Label" type="Label" parent="CanvasLayer/MarginContainer/FinishButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Play"
+label_settings = SubResource("LabelSettings_ko4bx")
+horizontal_alignment = 1
+vertical_alignment = 1
