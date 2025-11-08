@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="DialogueResource" load_steps=9 format=3 uid="uid://svcjwc3xgwu4"]
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=11 format=3 uid="uid://svcjwc3xgwu4"]
 
 [ext_resource type="Script" uid="uid://bf5o4ybofcud1" path="res://Entities/Dialogue/DialogueStruct.gd" id="1_e5emf"]
 [ext_resource type="Script" uid="uid://icyiph7n2cnx" path="res://Entities/Dialogue/DialogueResource.gd" id="2_iunqy"]
@@ -39,7 +39,19 @@ speaker_name = "???"
 text = "“NO WAY!! IT’S BEEN [b]AGES[/b]!!! I [b]MUST[/b] SAY HELLO AT ALL COST!!”"
 metadata/_custom_type_script = "uid://bf5o4ybofcud1"
 
+[sub_resource type="Resource" id="Resource_1vyhc"]
+script = ExtResource("1_e5emf")
+speaker_name = "???"
+text = "“-Woah calm down! but… you’re right.  It just hit me now how much I've been longing for us to meet again!”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_1qgjw"]
+script = ExtResource("1_e5emf")
+speaker_name = "???"
+text = "“Haha, which means I'm no different. Then…”[br]“Let's open up the gate shall we?” "
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
 [resource]
 script = ExtResource("2_iunqy")
-lines = Array[ExtResource("1_e5emf")]([SubResource("Resource_e5emf"), SubResource("Resource_iunqy"), SubResource("Resource_jfcg0"), SubResource("Resource_q2378"), SubResource("Resource_s2nu0"), SubResource("Resource_580im")])
+lines = Array[ExtResource("1_e5emf")]([SubResource("Resource_e5emf"), SubResource("Resource_iunqy"), SubResource("Resource_jfcg0"), SubResource("Resource_q2378"), SubResource("Resource_s2nu0"), SubResource("Resource_580im"), SubResource("Resource_1vyhc"), SubResource("Resource_1qgjw")])
 metadata/_custom_type_script = "uid://icyiph7n2cnx"

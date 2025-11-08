@@ -1,27 +1,16 @@
-[gd_scene load_steps=10 format=3 uid="uid://b55qor3r7rpy4"]
+[gd_scene load_steps=16 format=3 uid="uid://b55qor3r7rpy4"]
 
 [ext_resource type="Script" uid="uid://cyfcfxi74j2y5" path="res://Stages/Intro/Intro.gd" id="1_gdlpu"]
 [ext_resource type="Texture2D" uid="uid://bk86bt7xokts0" path="res://Assets/white_texture.png" id="1_tsgcr"]
+[ext_resource type="Texture2D" uid="uid://d1xg3v7a1cjkp" path="res://Assets/Drawn/Intro/sc1.6.png" id="2_3lht5"]
 [ext_resource type="LabelSettings" uid="uid://bmky0j7y04kum" path="res://Common/Font Resources/StoryBook_White_22.tres" id="2_u6u05"]
 [ext_resource type="Script" uid="uid://x0poab2ufpp8" path="res://Common/GameButton.gd" id="3_cx5bo"]
 [ext_resource type="FontFile" uid="uid://bxr12aee8vmc4" path="res://Assets/Fonts/Storyboo.TTF" id="4_gdlpu"]
-
-[sub_resource type="Animation" id="Animation_skkb8"]
-resource_name = "scroll"
-length = 30.0
-step = 0.1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Label:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 30),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(214, 738), Vector2(214, -1315)]
-}
+[ext_resource type="Texture2D" uid="uid://dvpuabqnjg6jq" path="res://Assets/Drawn/Intro/Sc1.1.png" id="4_skkb8"]
+[ext_resource type="Texture2D" uid="uid://c2dnywgph1od3" path="res://Assets/Drawn/Intro/Sc1.2.png" id="6_7i3j8"]
+[ext_resource type="Texture2D" uid="uid://pu5wjsquuoh8" path="res://Assets/Drawn/Intro/Sc1.3.png" id="7_k1lsf"]
+[ext_resource type="Texture2D" uid="uid://crcjciaipgt81" path="res://Assets/Drawn/Intro/sc1.4.png" id="8_sttgl"]
+[ext_resource type="Texture2D" uid="uid://dgo2m132xxivs" path="res://Assets/Drawn/Intro/sc1.5.png" id="9_nsxuu"]
 
 [sub_resource type="Animation" id="Animation_p4lkr"]
 length = 0.001
@@ -36,6 +25,47 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Vector2(214, 738)]
+}
+
+[sub_resource type="Animation" id="Animation_skkb8"]
+resource_name = "scroll"
+length = 45.0
+step = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 45),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(214, 738), Vector2(214, -1315)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TextureRect:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 4.5, 10, 15.5, 21.5, 27, 32.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("1_tsgcr"), ExtResource("4_skkb8"), ExtResource("6_7i3j8"), ExtResource("7_k1lsf"), ExtResource("8_sttgl"), ExtResource("9_nsxuu"), ExtResource("2_3lht5")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TextureRect:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(4.5, 6, 8.5, 10, 11.5, 14, 15.5, 17, 20, 21.5, 23, 25.5, 27, 28.5, 31, 32.5, 34),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(0, 0, 0, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(0, 0, 0, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(0, 0, 0, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(0, 0, 0, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(0, 0, 0, 1), Color(1, 1, 1, 1)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_8al3l"]
@@ -60,7 +90,17 @@ mouse_filter = 1
 script = ExtResource("1_gdlpu")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-self_modulate = Color(0, 0, 0, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_3lht5")
+expand_mode = 3
+
+[node name="overlay" type="TextureRect" parent="."]
+self_modulate = Color(0, 0, 0, 0.29411766)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -68,6 +108,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_tsgcr")
+expand_mode = 3
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
