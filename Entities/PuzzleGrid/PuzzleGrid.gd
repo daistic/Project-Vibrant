@@ -10,7 +10,9 @@ extends Area2D
 @onready var collision_polygon_2d: CollisionPolygon2D = $CollisionPolygon2D
 
 var fragment_has_entered: bool = false
-var fragment_on_grid: PuzzleFragment
+var fragment_placed: bool = false
+var entered_fragments: Array[PuzzleFragment]
+var placed_fragment: PuzzleFragment
 
 func _ready() -> void:
 	sprite_2d.texture = sprite
@@ -18,16 +20,32 @@ func _ready() -> void:
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_released("click_puzzle"):
-		if fragment_has_entered and grid_id == fragment_on_grid.fragment_id:
-			var tween: Tween = get_tree().create_tween()
-			tween.tween_property(
-				fragment_on_grid, "position", self.position, 0.2
-				).set_ease(Tween.EASE_OUT)
+		if (fragment_has_entered == true and 
+			entered_fragments.back().fragment_id == grid_id and 
+			fragment_placed == false and placed_fragment == null):
+			placed_fragment = entered_fragments.back()
+			_reposition_placed_fragment()
+		
+		if fragment_has_entered == false:
+			placed_fragment = null
+			
+			for fragment in entered_fragments:
+				if fragment.fragment_id == grid_id and placed_fragment == null:
+					placed_fragment = fragment
+					_reposition_placed_fragment()
+					break
+
+func _reposition_placed_fragment() -> void:
+	var tween: Tween = get_tree().create_tween()
+	tween.tween_property(
+		placed_fragment, "position", self.position, 0.2
+		).set_ease(Tween.EASE_OUT)
+	placed_fragment.z_index = 0
 
 func _on_area_entered(area: Area2D) -> void:
 	fragment_has_entered = true
-	fragment_on_grid = area
+	entered_fragments.append(area)
 
-func _on_area_exited(_area: Area2D) -> void:
+func _on_area_exited(area: Area2D) -> void:
 	fragment_has_entered = false
-	fragment_on_grid = null
+	entered_fragments.erase(area)

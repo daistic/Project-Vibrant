@@ -24,6 +24,11 @@ func _process(_delta: float) -> void:
 	if dragging:
 		position = get_global_mouse_position() - offset
 
+func _input(event: InputEvent) -> void:
+	if event.is_action_released("click_puzzle"):
+		dragging = false
+		currently_dragging = false
+
 func _on_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> void:
 	if currently_dragging == true and dragging == false:
 		return
@@ -34,7 +39,3 @@ func _on_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> voi
 		offset = get_global_mouse_position() - global_position
 		last_z_index += 1
 		z_index = last_z_index
-	
-	if event.is_action_released("click_puzzle"):
-		dragging = false
-		currently_dragging = false
