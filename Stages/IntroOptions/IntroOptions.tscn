@@ -1,0 +1,108 @@
+[gd_scene load_steps=7 format=3 uid="uid://b5pmvvi56h3vd"]
+
+[ext_resource type="Script" uid="uid://blsdg7f0y2xrx" path="res://Stages/IntroOptions/IntroOptions.gd" id="1_dnsol"]
+[ext_resource type="Texture2D" uid="uid://cid6xr882pgdm" path="res://Assets/Drawn/Duction/all3.png" id="1_uojr1"]
+[ext_resource type="Texture2D" uid="uid://bk86bt7xokts0" path="res://Assets/white_texture.png" id="2_8qp2h"]
+[ext_resource type="Script" uid="uid://x0poab2ufpp8" path="res://Common/GameButton.gd" id="3_dnsol"]
+[ext_resource type="FontFile" uid="uid://bxr12aee8vmc4" path="res://Assets/Fonts/Storyboo.TTF" id="4_mtdub"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_0lq5e"]
+font = ExtResource("4_mtdub")
+font_size = 22
+font_color = Color(0, 0, 0, 1)
+
+[node name="IntroOptions" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("1_dnsol")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_uojr1")
+expand_mode = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 50
+
+[node name="YellowButton" type="TextureButton" parent="VBoxContainer"]
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 2
+texture_normal = ExtResource("2_8qp2h")
+stretch_mode = 0
+script = ExtResource("3_dnsol")
+
+[node name="Label" type="Label" parent="VBoxContainer/YellowButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Yellow"
+label_settings = SubResource("LabelSettings_0lq5e")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BlueButton" type="TextureButton" parent="VBoxContainer"]
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 2
+texture_normal = ExtResource("2_8qp2h")
+stretch_mode = 0
+script = ExtResource("3_dnsol")
+
+[node name="Label" type="Label" parent="VBoxContainer/BlueButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Blue"
+label_settings = SubResource("LabelSettings_0lq5e")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RedButton" type="TextureButton" parent="VBoxContainer"]
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 2
+texture_normal = ExtResource("2_8qp2h")
+stretch_mode = 0
+script = ExtResource("3_dnsol")
+
+[node name="Label" type="Label" parent="VBoxContainer/RedButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Red"
+label_settings = SubResource("LabelSettings_0lq5e")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="VBoxContainer/YellowButton" to="." method="_on_yellow_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/BlueButton" to="." method="_on_blue_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/RedButton" to="." method="_on_red_button_pressed"]

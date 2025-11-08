@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dkxvhdwdo2e5s"]
+
+[ext_resource type="PackedScene" uid="uid://dcso33gyulutw" path="res://Stages/Comic/BaseComic.tscn" id="1_5v3c5"]
+[ext_resource type="Resource" uid="uid://c6ok15moxagjr" path="res://Stages/Comic/Yellow Option/yellow_option.tres" id="2_co3xl"]
+
+[node name="YellowOption" instance=ExtResource("1_5v3c5")]
+dialogue = ExtResource("2_co3xl")
+next_scene_key = "intro_options"
+
+[node name="Illustration2" parent="PanelParent" index="1"]
+modulate = Color(1, 1, 1, 0)

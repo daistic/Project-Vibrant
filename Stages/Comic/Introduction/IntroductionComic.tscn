@@ -6,6 +6,7 @@
 
 [node name="BaseComic" instance=ExtResource("1_j07of")]
 dialogue = ExtResource("2_deqay")
+next_scene_key = "intro_options"
 
 [node name="Illustration" parent="PanelParent" index="0"]
 texture = ExtResource("3_huu1l")

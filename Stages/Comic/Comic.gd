@@ -13,6 +13,7 @@ extends Control
 @onready var comic_animation: AnimationPlayer = $ComicAnimation
 
 @export var dialogue: DialogueResource
+@export var next_scene_key: String
 
 var text: String = " "
 var letter_index: int = 0
@@ -27,7 +28,7 @@ func _unhandled_input(event: InputEvent) -> void:
 
 func _handle_line_events() -> void:
 	if line_index >= dialogue.lines.size():
-		GameManager.go_to_puzzle_scene()
+		GameManager.handle_next_scene_key(next_scene_key)
 		return
 	
 	if is_event_ready == false:

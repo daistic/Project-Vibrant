@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=11 format=3 uid="uid://c6ok15moxagjr"]
+
+[ext_resource type="Script" uid="uid://bf5o4ybofcud1" path="res://Entities/Dialogue/DialogueStruct.gd" id="1_yvqnd"]
+[ext_resource type="Texture2D" uid="uid://bthj0e8f6opg" path="res://Assets/Placeholders/placeholder.jpg" id="2_k5q4l"]
+[ext_resource type="Texture2D" uid="uid://cj1f8ugmg0ojf" path="res://Assets/Placeholders/placeholder2.png" id="3_v33jt"]
+[ext_resource type="Script" uid="uid://icyiph7n2cnx" path="res://Entities/Dialogue/DialogueResource.gd" id="4_37x65"]
+
+[sub_resource type="Resource" id="Resource_pd5hl"]
+script = ExtResource("1_yvqnd")
+panel = ExtResource("2_k5q4l")
+line_event = 1
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_op4yp"]
+script = ExtResource("1_yvqnd")
+speaker_name = "Red"
+text = "Hello It's me"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_yrmf5"]
+script = ExtResource("1_yvqnd")
+speaker_name = "Yellow"
+text = "long long test"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_6ta1n"]
+script = ExtResource("1_yvqnd")
+speaker_name = "Blue"
+text = "Tis Change"
+panel = ExtResource("3_v33jt")
+line_event = 3
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_qhthu"]
+script = ExtResource("1_yvqnd")
+speaker_name = "Yahooo"
+text = "bb"
+panel = ExtResource("2_k5q4l")
+line_event = 2
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_gl3qo"]
+script = ExtResource("1_yvqnd")
+speaker_name = "asaa"
+text = "monolo"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[resource]
+script = ExtResource("4_37x65")
+lines = Array[ExtResource("1_yvqnd")]([SubResource("Resource_pd5hl"), SubResource("Resource_op4yp"), SubResource("Resource_yrmf5"), SubResource("Resource_6ta1n"), SubResource("Resource_qhthu"), SubResource("Resource_gl3qo")])
+metadata/_custom_type_script = "uid://icyiph7n2cnx"
