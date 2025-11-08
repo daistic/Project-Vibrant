@@ -3,7 +3,6 @@
 [ext_resource type="Script" uid="uid://cqiogfq8sk4q4" path="res://Stages/Comic/Comic.gd" id="1_3dhto"]
 [ext_resource type="Resource" uid="uid://ceciey5lhgr6a" path="res://Stages/Comic/Test/dialoguesample.tres" id="2_27l8w"]
 [ext_resource type="FontFile" uid="uid://bxr12aee8vmc4" path="res://Assets/Fonts/Storyboo.TTF" id="4_vsjab"]
-[ext_resource type="LabelSettings" uid="uid://bmky0j7y04kum" path="res://Common/Font Resources/StoryBook_White_22.tres" id="4_w7vhx"]
 
 [sub_resource type="Gradient" id="Gradient_27l8w"]
 offsets = PackedFloat32Array(0, 0.8, 1)
@@ -19,6 +18,10 @@ metadata/_snap_enabled = true
 [sub_resource type="LabelSettings" id="LabelSettings_w7vhx"]
 font = ExtResource("4_vsjab")
 font_size = 24
+
+[sub_resource type="FontVariation" id="FontVariation_27l8w"]
+base_font = ExtResource("4_vsjab")
+variation_embolden = 0.75
 
 [sub_resource type="Animation" id="Animation_27l8w"]
 resource_name = "Change Panel"
@@ -286,10 +289,12 @@ custom_minimum_size = Vector2(250, 0)
 layout_mode = 2
 size_flags_horizontal = 0
 
-[node name="LineLabel" type="Label" parent="TextArea/MarginContainer/VBoxContainer"]
+[node name="LineLabel" type="RichTextLabel" parent="TextArea/MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
-label_settings = ExtResource("4_w7vhx")
+theme_override_fonts/normal_font = ExtResource("4_vsjab")
+theme_override_fonts/bold_font = SubResource("FontVariation_27l8w")
+bbcode_enabled = true
 
 [node name="TypingTimer" type="Timer" parent="."]
 wait_time = 0.05

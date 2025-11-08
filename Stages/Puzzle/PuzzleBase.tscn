@@ -1,8 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://fvbglxmndqo2"]
+[gd_scene load_steps=10 format=3 uid="uid://fvbglxmndqo2"]
 
 [ext_resource type="Script" uid="uid://0s666fi80js0" path="res://Stages/Puzzle/Puzzle.gd" id="1_ad5m0"]
+[ext_resource type="PackedScene" uid="uid://fri42p2bfp5d" path="res://Entities/Puzzle Fragment/PuzzleFragment.tscn" id="1_gc6vh"]
+[ext_resource type="Texture2D" uid="uid://dl30gff8r42aq" path="res://Assets/Placeholders/fragmentY placeholder.png" id="2_ad5m0"]
 [ext_resource type="Texture2D" uid="uid://bk86bt7xokts0" path="res://Assets/white_texture.png" id="2_gc6vh"]
 [ext_resource type="Script" uid="uid://x0poab2ufpp8" path="res://Common/GameButton.gd" id="3_ad5m0"]
+[ext_resource type="Texture2D" uid="uid://cs4elfxag0sro" path="res://Assets/Placeholders/fragment2B placeholder.png" id="3_lur0l"]
+[ext_resource type="PackedScene" uid="uid://tm8c3e1mkgqx" path="res://Entities/PuzzleGrid/PuzzleGrid.tscn" id="4_ko4bx"]
 [ext_resource type="FontFile" uid="uid://bxr12aee8vmc4" path="res://Assets/Fonts/Storyboo.TTF" id="4_lur0l"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_ko4bx"]
@@ -45,3 +49,21 @@ text = "Play"
 label_settings = SubResource("LabelSettings_ko4bx")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="PuzzleFragment" parent="." instance=ExtResource("1_gc6vh")]
+position = Vector2(188, 113)
+sprite = ExtResource("2_ad5m0")
+
+[node name="PuzzleFragment3" parent="." instance=ExtResource("1_gc6vh")]
+position = Vector2(442, 188)
+sprite = ExtResource("3_lur0l")
+fragment_id = 1
+
+[node name="PuzzleFragment2" parent="." instance=ExtResource("1_gc6vh")]
+position = Vector2(217, 308)
+
+[node name="PuzzleGrid" parent="." instance=ExtResource("4_ko4bx")]
+position = Vector2(838, 321)
+
+[node name="PuzzleGrid2" parent="." instance=ExtResource("4_ko4bx")]
+position = Vector2(728, 164)

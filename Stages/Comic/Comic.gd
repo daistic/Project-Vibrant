@@ -7,7 +7,7 @@ extends Control
 
 @onready var text_area: TextureRect = $TextArea
 @onready var speaker_label: Label = $TextArea/MarginContainer/VBoxContainer/SpeakerLabel
-@onready var line_label: Label = $TextArea/MarginContainer/VBoxContainer/LineLabel
+@onready var line_label: RichTextLabel = $TextArea/MarginContainer/VBoxContainer/LineLabel
 
 @onready var typing_timer: Timer = $TypingTimer
 @onready var comic_animation: AnimationPlayer = $ComicAnimation
@@ -52,6 +52,11 @@ func _start_typing(new_text: String) -> void:
 	_type_text()
 
 func _type_text() -> void:
+	if text[letter_index] == "[":
+		while (text[letter_index] != "]"):
+			line_label.text += text[letter_index]
+			letter_index += 1
+	
 	line_label.text += text[letter_index]
 	letter_index += 1
 	

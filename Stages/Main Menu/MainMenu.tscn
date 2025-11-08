@@ -19,6 +19,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 1
 script = ExtResource("1_hvo74")
+start_comic_key = "Introduction"
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1

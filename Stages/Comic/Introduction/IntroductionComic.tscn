@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://dvbelqw3d8d86"]
+
+[ext_resource type="PackedScene" uid="uid://dcso33gyulutw" path="res://Stages/Comic/BaseComic.tscn" id="1_j07of"]
+[ext_resource type="Resource" uid="uid://svcjwc3xgwu4" path="res://Stages/Comic/Introduction/IntroductionDialogue.tres" id="2_deqay"]
+
+[node name="BaseComic" instance=ExtResource("1_j07of")]
+dialogue = ExtResource("2_deqay")
