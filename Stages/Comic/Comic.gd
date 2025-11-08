@@ -19,6 +19,8 @@ var letter_index: int = 0
 var line_index: int = 0
 var is_typing: bool = false
 
+var is_event_ready: bool = true
+
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("advance"):
 		_handle_line_events()
@@ -28,11 +30,17 @@ func _handle_line_events() -> void:
 		GameManager.go_to_puzzle_scene()
 		return
 	
+	if is_event_ready == false:
+		_handle_text_area()
+		return
+	
 	match dialogue.lines[line_index].line_event:
 		DialogueStruct.EVENTS.PANEL_CHANGE:
 			comic_animation.play("Change Panel")
 		DialogueStruct.EVENTS.FADE_IN:
 			comic_animation.play("Fade In")
+		DialogueStruct.EVENTS.FLASH:
+			comic_animation.play("Flash")
 		DialogueStruct.EVENTS.NONE:
 			_handle_text_area()
 
@@ -71,6 +79,8 @@ func _finish_typing() -> void:
 	line_index += 1
 	is_typing = false
 	typing_timer.stop()
+	
+	is_event_ready = true
 
 func _new_panel_setup() -> void:
 	illustration_2.texture = dialogue.lines[line_index].panel
@@ -78,6 +88,7 @@ func _new_panel_setup() -> void:
 func _new_panel_finished_animating() -> void:
 	illustration.texture = dialogue.lines[line_index].panel
 	illustration.self_modulate = Color(1.0, 1.0, 1.0, 1.0)
+	is_event_ready = false
 	_handle_text_area()
 
 func _direct_panel_change() -> void:
