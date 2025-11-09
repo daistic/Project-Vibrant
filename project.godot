@@ -13,7 +13,7 @@ config_version=5
 config/name="Project Vibrant"
 run/main_scene="uid://bl2upi75da1co"
 config/features=PackedStringArray("4.5", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="uid://b27kt1mco5bir"
 
 [autoload]
 
