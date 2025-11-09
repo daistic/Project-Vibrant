@@ -18,10 +18,11 @@ func handle_next_scene_key(next_scene_key: String) -> void:
 	if next_scene_key.contains("puzzle:"):
 		puzzle_key = next_scene_key.get_slice(":", 1)
 		go_to_puzzle_scene()
+		SoundManager.play_bgm("Puzzle")
 	elif next_scene_key.contains("comic:"):
 		comic_key = next_scene_key.get_slice(":", 1)
-		print(comic_key)
 		go_to_comic_scene()
+		SoundManager.play_bgm("Story")
 	elif next_scene_key == "intro_options":
 		go_to_intro_options()
 	elif next_scene_key == "ending":
@@ -29,7 +30,9 @@ func handle_next_scene_key(next_scene_key: String) -> void:
 			comic_key = "ending black"
 		else:
 			comic_key = "ending white"
+		
 		go_to_comic_scene()
+		SoundManager.play_bgm("Ending")
 
 func go_to_intro_scene() -> void:
 	comic_key = ""

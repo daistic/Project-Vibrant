@@ -41,3 +41,5 @@ func _on_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> voi
 		offset = get_global_mouse_position() - global_position
 		last_z_index += 1
 		z_index = last_z_index
+		
+		SoundManager.play_sfx("Drag Puzzle")

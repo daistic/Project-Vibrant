@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dsvdu5ekol7rb"
+path="res://.godot/imported/Drag Puzzle.mp3-6e4bee280e1607fb9bfab9f4a9a5f8c0.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/SFX/Drag Puzzle.mp3"
+dest_files=["res://.godot/imported/Drag Puzzle.mp3-6e4bee280e1607fb9bfab9f4a9a5f8c0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

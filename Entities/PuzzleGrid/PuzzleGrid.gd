@@ -42,6 +42,7 @@ func _reposition_placed_fragment() -> void:
 		).set_ease(Tween.EASE_OUT)
 	
 	placed_fragment.z_index = 0
+	SoundManager.play_sfx("Put Puzzle")
 
 func _on_area_entered(area: Area2D) -> void:
 	if area is PuzzleFragment:
