@@ -120,7 +120,7 @@ polygon_points = PackedVector2Array(-35, -11.6666565, -25, 15, 33.333313, 20, -5
 fragment_id = 3
 
 [node name="PuzzleFragment5" parent="." index="7" instance=ExtResource("13_w133l")]
-position = Vector2(98, 557)
+position = Vector2(247, 317)
 sprite = ExtResource("18_r36um")
 polygon_points = PackedVector2Array(-33.333313, 16.666687, 0, -28.333313, 41.666687, -33.333313, 50, -3.333313)
 fragment_id = 4
