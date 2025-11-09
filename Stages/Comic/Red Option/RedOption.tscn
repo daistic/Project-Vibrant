@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://dkftn1uhik8lt"]
+
+[ext_resource type="PackedScene" uid="uid://dcso33gyulutw" path="res://Stages/Comic/BaseComic.tscn" id="1_wtiw8"]
+[ext_resource type="Resource" uid="uid://b6k0524vpbx1h" path="res://Stages/Comic/Red Option/RedOption.tres" id="2_wvwuj"]
+
+[node name="RedOption" instance=ExtResource("1_wtiw8")]
+dialogue = ExtResource("2_wvwuj")
+next_scene_key = "intro_options"

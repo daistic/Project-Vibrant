@@ -1,51 +1,107 @@
-[gd_resource type="Resource" script_class="DialogueResource" load_steps=11 format=3 uid="uid://c6ok15moxagjr"]
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=22 format=3 uid="uid://c6ok15moxagjr"]
 
 [ext_resource type="Script" uid="uid://bf5o4ybofcud1" path="res://Entities/Dialogue/DialogueStruct.gd" id="1_yvqnd"]
-[ext_resource type="Texture2D" uid="uid://bthj0e8f6opg" path="res://Assets/Placeholders/placeholder.jpg" id="2_k5q4l"]
-[ext_resource type="Texture2D" uid="uid://cj1f8ugmg0ojf" path="res://Assets/Placeholders/placeholder2.png" id="3_v33jt"]
+[ext_resource type="Texture2D" uid="uid://b2q1omlfmvmy7" path="res://Assets/Drawn/Duction/blue1.png" id="2_yvqnd"]
+[ext_resource type="Texture2D" uid="uid://dwjejs7dhn444" path="res://Assets/Drawn/Duction/yellow1.png" id="3_yvqnd"]
 [ext_resource type="Script" uid="uid://icyiph7n2cnx" path="res://Entities/Dialogue/DialogueResource.gd" id="4_37x65"]
+[ext_resource type="Texture2D" uid="uid://cwcnsi7oo2rm5" path="res://Assets/Drawn/Duction/red3.png" id="4_urn5h"]
+[ext_resource type="Texture2D" uid="uid://c6ygwyyph8up7" path="res://Assets/Drawn/Duction/yellow2.png" id="5_ctv1p"]
+[ext_resource type="Texture2D" uid="uid://c20mkle3npfxj" path="res://Assets/Drawn/Duction/red1.png" id="6_nnxgs"]
 
-[sub_resource type="Resource" id="Resource_pd5hl"]
-script = ExtResource("1_yvqnd")
-panel = ExtResource("2_k5q4l")
-line_event = 1
-metadata/_custom_type_script = "uid://bf5o4ybofcud1"
-
-[sub_resource type="Resource" id="Resource_op4yp"]
-script = ExtResource("1_yvqnd")
-speaker_name = "Red"
-text = "Hello It's me"
-metadata/_custom_type_script = "uid://bf5o4ybofcud1"
-
-[sub_resource type="Resource" id="Resource_yrmf5"]
+[sub_resource type="Resource" id="Resource_nstgf"]
 script = ExtResource("1_yvqnd")
 speaker_name = "Yellow"
-text = "long long test"
+text = "“BLAAAAAAAAAAAAAAAAAAAAAACK!!” "
 metadata/_custom_type_script = "uid://bf5o4ybofcud1"
 
-[sub_resource type="Resource" id="Resource_6ta1n"]
+[sub_resource type="Resource" id="Resource_yiagy"]
+script = ExtResource("1_yvqnd")
+speaker_name = "Yellow"
+text = "“You have NO IDEA how much I’ve been DREAMING for this day to come!!!”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_yvqnd"]
 script = ExtResource("1_yvqnd")
 speaker_name = "Blue"
-text = "Tis Change"
-panel = ExtResource("3_v33jt")
-line_event = 3
+text = "“Oh gosh. here it comes”"
+panel = ExtResource("2_yvqnd")
 metadata/_custom_type_script = "uid://bf5o4ybofcud1"
 
-[sub_resource type="Resource" id="Resource_qhthu"]
+[sub_resource type="Resource" id="Resource_k5q4l"]
 script = ExtResource("1_yvqnd")
-speaker_name = "Yahooo"
-text = "bb"
-panel = ExtResource("2_k5q4l")
-line_event = 2
+speaker_name = "Yellow"
+text = "“Everyday I think about how you’ve been doing.”[br]“If you’re safe or not. Like I think about how happy you must’ve been with your new life that now you’ve opened up with what you felt with us to want to live a life you dream of”[br]“Thanks to you everyone in this world is happy and we’ve been getting along better ever since. So I've also hoped that you’re getting along with whoever it is that you’ve met out there.”[br]“And due to that, I can’t help but feel JOOYOUS with how much happiness you’ve found out there. Just you and your new life. Not bound by the responsibilities we are happily tied with.”"
+panel = ExtResource("3_yvqnd")
+line_event = 6
 metadata/_custom_type_script = "uid://bf5o4ybofcud1"
 
-[sub_resource type="Resource" id="Resource_gl3qo"]
+[sub_resource type="Resource" id="Resource_10237"]
 script = ExtResource("1_yvqnd")
-speaker_name = "asaa"
-text = "monolo"
+speaker_name = "Red"
+text = "“Heehee… Yellow being lovely as always”"
+panel = ExtResource("4_urn5h")
+line_event = 7
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_sooyf"]
+script = ExtResource("1_yvqnd")
+speaker_name = "Yellow"
+text = "“Yeah!!”"
+panel = ExtResource("5_ctv1p")
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_ofa5a"]
+script = ExtResource("1_yvqnd")
+speaker_name = "Yellow"
+text = "“Ever since you left the piece… I’ve been feeling…”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_uger2"]
+script = ExtResource("1_yvqnd")
+speaker_name = "Yellow"
+text = "“...EXTREMELY JOYOUS!!!!”"
+panel = ExtResource("3_yvqnd")
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_ii1as"]
+script = ExtResource("1_yvqnd")
+speaker_name = "Yellow"
+text = "“AMAZING!”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_6c3so"]
+script = ExtResource("1_yvqnd")
+speaker_name = "Yellow"
+text = "“SPLENDID!!”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_wv5w0"]
+script = ExtResource("1_yvqnd")
+speaker_name = "Yellow"
+text = "“HAPPY!!!!!!!”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_sqgxw"]
+script = ExtResource("1_yvqnd")
+speaker_name = "Yellow"
+text = "“I thought to myself… is it okay to be THIS happy?!” "
+panel = ExtResource("5_ctv1p")
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_sar5h"]
+script = ExtResource("1_yvqnd")
+speaker_name = "Yellow"
+text = "“I mean- I’m not complaining, I’m COMPLIMENTING!!”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_rudp3"]
+script = ExtResource("1_yvqnd")
+speaker_name = "Red"
+text = "“Hehee, don’t take it in a mean way. Take it in a HEARTFUL way!!”"
+panel = ExtResource("6_nnxgs")
 metadata/_custom_type_script = "uid://bf5o4ybofcud1"
 
 [resource]
 script = ExtResource("4_37x65")
-lines = Array[ExtResource("1_yvqnd")]([SubResource("Resource_pd5hl"), SubResource("Resource_op4yp"), SubResource("Resource_yrmf5"), SubResource("Resource_6ta1n"), SubResource("Resource_qhthu"), SubResource("Resource_gl3qo")])
+lines = Array[ExtResource("1_yvqnd")]([SubResource("Resource_nstgf"), SubResource("Resource_yiagy"), SubResource("Resource_yvqnd"), SubResource("Resource_k5q4l"), SubResource("Resource_10237"), SubResource("Resource_sooyf"), SubResource("Resource_ofa5a"), SubResource("Resource_uger2"), SubResource("Resource_ii1as"), SubResource("Resource_6c3so"), SubResource("Resource_wv5w0"), SubResource("Resource_sqgxw"), SubResource("Resource_sar5h"), SubResource("Resource_rudp3")])
 metadata/_custom_type_script = "uid://icyiph7n2cnx"

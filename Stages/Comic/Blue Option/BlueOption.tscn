@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6yba6rd4dgag"]
+
+[ext_resource type="PackedScene" uid="uid://dcso33gyulutw" path="res://Stages/Comic/BaseComic.tscn" id="1_p6aom"]
+[ext_resource type="Resource" uid="uid://16ct3v8ly6ly" path="res://Stages/Comic/Blue Option/Blue Option.tres" id="2_nf2a5"]
+
+[node name="BlueOption" instance=ExtResource("1_p6aom")]
+dialogue = ExtResource("2_nf2a5")
+next_scene_key = "intro_options"

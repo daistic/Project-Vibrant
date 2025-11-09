@@ -26,6 +26,9 @@ func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("advance"):
 		_handle_line_events()
 
+func _ready() -> void:
+	_handle_line_events()
+
 func _handle_line_events() -> void:
 	if line_index >= dialogue.lines.size():
 		GameManager.handle_next_scene_key(next_scene_key)
@@ -42,7 +45,22 @@ func _handle_line_events() -> void:
 			comic_animation.play("Fade In")
 		DialogueStruct.EVENTS.FLASH:
 			comic_animation.play("Flash")
+		DialogueStruct.EVENTS.TEXT_SPEEDUP:
+			if dialogue.lines[line_index].panel != null:
+				_direct_panel_change()
+			
+			typing_timer.wait_time = 0.01
+			_handle_text_area()
+		DialogueStruct.EVENTS.TEXT_SPEEDBACK:
+			if dialogue.lines[line_index].panel != null:
+				_direct_panel_change()
+			
+			typing_timer.wait_time = 0.05
+			_handle_text_area()
 		DialogueStruct.EVENTS.NONE:
+			if dialogue.lines[line_index].panel != null:
+				_direct_panel_change()
+			
 			_handle_text_area()
 
 func _handle_text_area() -> void:

@@ -1,0 +1,116 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=25 format=3 uid="uid://b6k0524vpbx1h"]
+
+[ext_resource type="Script" uid="uid://bf5o4ybofcud1" path="res://Entities/Dialogue/DialogueStruct.gd" id="1_3p1ol"]
+[ext_resource type="Texture2D" uid="uid://cxxhlkh72h5pb" path="res://Assets/Drawn/Duction/red4.png" id="2_l3mxb"]
+[ext_resource type="Texture2D" uid="uid://c20mkle3npfxj" path="res://Assets/Drawn/Duction/red1.png" id="3_f48en"]
+[ext_resource type="Script" uid="uid://icyiph7n2cnx" path="res://Entities/Dialogue/DialogueResource.gd" id="4_kgj3r"]
+[ext_resource type="Texture2D" uid="uid://cwcnsi7oo2rm5" path="res://Assets/Drawn/Duction/red3.png" id="4_ybmtp"]
+[ext_resource type="Texture2D" uid="uid://d1x7pcfyhooy7" path="res://Assets/Drawn/Duction/red2.png" id="5_r4jlg"]
+[ext_resource type="Texture2D" uid="uid://dwjejs7dhn444" path="res://Assets/Drawn/Duction/yellow1.png" id="6_eddui"]
+[ext_resource type="Texture2D" uid="uid://y0hpnjberg2o" path="res://Assets/Drawn/Duction/blue2.png" id="7_483qk"]
+[ext_resource type="Texture2D" uid="uid://b2q1omlfmvmy7" path="res://Assets/Drawn/Duction/blue1.png" id="8_wnc6y"]
+
+[sub_resource type="Resource" id="Resource_0tdm0"]
+script = ExtResource("1_3p1ol")
+speaker_name = "Red"
+text = "“With [b]white[/b], I feel love, I feel passion burning within me.”"
+panel = ExtResource("2_l3mxb")
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_n10bm"]
+script = ExtResource("1_3p1ol")
+speaker_name = "Red"
+text = "“With [b]black[/b], I feel hate, I feel anger building within me.”"
+panel = ExtResource("3_f48en")
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_vr4n8"]
+script = ExtResource("1_3p1ol")
+speaker_name = "Red"
+text = "“But now… only [b]white[/b] remains on the throne.”"
+panel = ExtResource("4_ybmtp")
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_6t6gs"]
+script = ExtResource("1_3p1ol")
+speaker_name = "Red"
+text = "“Ever since [b]your absence[/b], I have changed. WE have changed.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_26pek"]
+script = ExtResource("1_3p1ol")
+speaker_name = "Red"
+text = "“By [b]white’s will[/b], I am happy. WE are happy.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_8y6ey"]
+script = ExtResource("1_3p1ol")
+speaker_name = "Red"
+text = "“Our lives have since been sinfully worthful.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_kcb1n"]
+script = ExtResource("1_3p1ol")
+speaker_name = "Red"
+text = "“But, no hate towards you black.”"
+panel = ExtResource("5_r4jlg")
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_nxrui"]
+script = ExtResource("1_3p1ol")
+speaker_name = "Red"
+text = "“As we are not, without your fall off of the throne.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_e8p1o"]
+script = ExtResource("1_3p1ol")
+speaker_name = "Red"
+text = "“...”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_3fnej"]
+script = ExtResource("1_3p1ol")
+speaker_name = "Red"
+text = "“What did you think of my [b]love[/b] poem?”"
+panel = ExtResource("3_f48en")
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_t5e58"]
+script = ExtResource("1_3p1ol")
+speaker_name = "Yellow"
+text = "“WOAH! DID YOU JUST MAKE THAT ON THE SPOT??”"
+panel = ExtResource("6_eddui")
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_c014w"]
+script = ExtResource("1_3p1ol")
+speaker_name = "Blue"
+text = "“Hm, 'As we are not, without your fall off of the throne.' huh…”"
+panel = ExtResource("7_483qk")
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_a7qph"]
+script = ExtResource("1_3p1ol")
+speaker_name = "Blue"
+text = "“... I do like this line as it shows how our eternal happiness is not possible without your will to be removed from the order of emotions.”"
+panel = ExtResource("8_wnc6y")
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_a1kg7"]
+script = ExtResource("1_3p1ol")
+speaker_name = "Red"
+text = "“And due to that, we’ve been longing to see you again black.”"
+panel = ExtResource("2_l3mxb")
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_uxorm"]
+script = ExtResource("1_3p1ol")
+speaker_name = "Red"
+text = "“To tell you how thankful we are.”"
+panel = ExtResource("5_r4jlg")
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[resource]
+script = ExtResource("4_kgj3r")
+lines = Array[ExtResource("1_3p1ol")]([SubResource("Resource_0tdm0"), SubResource("Resource_n10bm"), SubResource("Resource_vr4n8"), SubResource("Resource_6t6gs"), SubResource("Resource_26pek"), SubResource("Resource_8y6ey"), SubResource("Resource_kcb1n"), SubResource("Resource_nxrui"), SubResource("Resource_e8p1o"), SubResource("Resource_3fnej"), SubResource("Resource_t5e58"), SubResource("Resource_c014w"), SubResource("Resource_a7qph"), SubResource("Resource_a1kg7"), SubResource("Resource_uxorm")])
+metadata/_custom_type_script = "uid://icyiph7n2cnx"

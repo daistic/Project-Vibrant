@@ -11,6 +11,8 @@ func _ready() -> void:
 		blue_button.hide()
 	if GameManager.intro_options_picked[2] == true:
 		red_button.hide()
+	if GameManager.intro_options_picked.has(false) == false:
+		GameManager.handle_next_scene_key("comic:after options")
 
 func _on_yellow_button_pressed() -> void:
 	GameManager.intro_options_picked[0] = true

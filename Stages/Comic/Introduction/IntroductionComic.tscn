@@ -10,9 +10,3 @@ next_scene_key = "intro_options"
 
 [node name="Illustration" parent="PanelParent" index="0"]
 texture = ExtResource("3_huu1l")
-
-[node name="Illustration2" parent="PanelParent" index="1"]
-modulate = Color(1, 1, 1, 0)
-
-[node name="ComicAnimation" parent="." index="3"]
-autoplay = ""

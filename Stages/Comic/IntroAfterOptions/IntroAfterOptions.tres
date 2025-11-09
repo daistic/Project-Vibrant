@@ -1,0 +1,75 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=16 format=3 uid="uid://cq225lu4eqplw"]
+
+[ext_resource type="Script" uid="uid://bf5o4ybofcud1" path="res://Entities/Dialogue/DialogueStruct.gd" id="1_kk3e7"]
+[ext_resource type="Texture2D" uid="uid://dwjejs7dhn444" path="res://Assets/Drawn/Duction/yellow1.png" id="2_vj7cc"]
+[ext_resource type="Texture2D" uid="uid://b2q1omlfmvmy7" path="res://Assets/Drawn/Duction/blue1.png" id="3_7xqx8"]
+[ext_resource type="Script" uid="uid://icyiph7n2cnx" path="res://Entities/Dialogue/DialogueResource.gd" id="4_7xqx8"]
+[ext_resource type="Texture2D" uid="uid://c6ygwyyph8up7" path="res://Assets/Drawn/Duction/yellow2.png" id="4_qadw6"]
+[ext_resource type="Texture2D" uid="uid://d1x7pcfyhooy7" path="res://Assets/Drawn/Duction/red2.png" id="5_j3v2g"]
+
+[sub_resource type="Resource" id="Resource_fo7mb"]
+script = ExtResource("1_kk3e7")
+speaker_name = "Yellow"
+text = "“OMG!!”"
+panel = ExtResource("2_vj7cc")
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_xv62y"]
+script = ExtResource("1_kk3e7")
+speaker_name = "Blue"
+text = "“Woah there, what got you all sparkling like that yellow?”"
+panel = ExtResource("3_7xqx8")
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_jp2pa"]
+script = ExtResource("1_kk3e7")
+speaker_name = "Yellow"
+text = "“It suddenly came to me…”"
+panel = ExtResource("4_qadw6")
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_ev414"]
+script = ExtResource("1_kk3e7")
+speaker_name = "Red"
+text = "“...?”"
+panel = ExtResource("5_j3v2g")
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_1wwhi"]
+script = ExtResource("1_kk3e7")
+speaker_name = "Yellow"
+text = "“YOU HAVE TO COME VISIT MY DIMENSION!! THERE IS SOMETHING I WANT TO SHOW!!”"
+panel = ExtResource("2_vj7cc")
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_ekufh"]
+script = ExtResource("1_kk3e7")
+speaker_name = "Yellow"
+text = "“YOU MUST. ENTER. NOW!!!!!!!!!!!!!!”"
+panel = ExtResource("2_vj7cc")
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_7cee7"]
+script = ExtResource("1_kk3e7")
+speaker_name = "Yellow"
+text = "“EXCUSE ME AS I DRAG YOU IN!!!!!!!”"
+panel = ExtResource("2_vj7cc")
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_8ue74"]
+script = ExtResource("1_kk3e7")
+speaker_name = "Blue"
+text = "“Woah there!-”"
+panel = ExtResource("3_7xqx8")
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_vmcjs"]
+script = ExtResource("1_kk3e7")
+panel = ExtResource("3_7xqx8")
+line_event = 5
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[resource]
+script = ExtResource("4_7xqx8")
+lines = Array[ExtResource("1_kk3e7")]([SubResource("Resource_fo7mb"), SubResource("Resource_xv62y"), SubResource("Resource_jp2pa"), SubResource("Resource_ev414"), SubResource("Resource_1wwhi"), SubResource("Resource_ekufh"), SubResource("Resource_7cee7"), SubResource("Resource_8ue74"), SubResource("Resource_vmcjs")])
+metadata/_custom_type_script = "uid://icyiph7n2cnx"

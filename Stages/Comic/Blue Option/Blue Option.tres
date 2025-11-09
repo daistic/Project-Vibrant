@@ -1,0 +1,98 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=20 format=3 uid="uid://16ct3v8ly6ly"]
+
+[ext_resource type="Script" uid="uid://bf5o4ybofcud1" path="res://Entities/Dialogue/DialogueStruct.gd" id="1_j72ma"]
+[ext_resource type="Texture2D" uid="uid://b2q1omlfmvmy7" path="res://Assets/Drawn/Duction/blue1.png" id="2_25y37"]
+[ext_resource type="Texture2D" uid="uid://y0hpnjberg2o" path="res://Assets/Drawn/Duction/blue2.png" id="3_kfwlj"]
+[ext_resource type="Texture2D" uid="uid://dwjejs7dhn444" path="res://Assets/Drawn/Duction/yellow1.png" id="4_hwwa8"]
+[ext_resource type="Script" uid="uid://icyiph7n2cnx" path="res://Entities/Dialogue/DialogueResource.gd" id="4_kfwlj"]
+[ext_resource type="Texture2D" uid="uid://cwcnsi7oo2rm5" path="res://Assets/Drawn/Duction/red3.png" id="5_ymsy1"]
+
+[sub_resource type="Resource" id="Resource_ecud5"]
+script = ExtResource("1_j72ma")
+speaker_name = "Blue"
+text = "“Ah, I’m actually surprised that you came back, black.”"
+panel = ExtResource("2_25y37")
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_7bb0l"]
+script = ExtResource("1_j72ma")
+speaker_name = "Blue"
+text = "“I can’t recall how long it has been, I’ve lost count. But at the same time…”"
+panel = ExtResource("3_kfwlj")
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_7qqv2"]
+script = ExtResource("1_j72ma")
+speaker_name = "Blue"
+text = "“...It didn’t feel like forever!”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_ukyqi"]
+script = ExtResource("1_j72ma")
+speaker_name = "Blue"
+text = "“Maybe it’s due to how my heart has been calm and at peace ever since, I don’t feel sad nor gloomy all the time anymore!”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_qrupm"]
+script = ExtResource("1_j72ma")
+speaker_name = "Blue"
+text = "“Every weight feels like it has been lifted off of my life! So in that way, I am grateful.”"
+panel = ExtResource("2_25y37")
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_a1foo"]
+script = ExtResource("1_j72ma")
+speaker_name = "Yellow"
+text = "“Gotta admit that that’s a HUGE thing coming from blue. Considering that blue used to be so ISOLATED and BARELY LEAVED the [b]glass dimension![/b]”"
+panel = ExtResource("4_hwwa8")
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_fv1kf"]
+script = ExtResource("1_j72ma")
+speaker_name = "Red"
+text = "“Heehee, you were basically a deity of shut-in.”"
+panel = ExtResource("5_ymsy1")
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_uevlm"]
+script = ExtResource("1_j72ma")
+speaker_name = "Blue"
+text = "“You can’t blame me. My glass dimension felt like my only comfort zone.”"
+panel = ExtResource("3_kfwlj")
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_fhu0t"]
+script = ExtResource("1_j72ma")
+speaker_name = "Blue"
+text = "“Calm, peace, quiet, all in there!”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_liyvw"]
+script = ExtResource("1_j72ma")
+speaker_name = "Blue"
+text = "“It was my everything.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_3hkvj"]
+script = ExtResource("1_j72ma")
+speaker_name = "Blue"
+text = "“That is of course, not the case anymore!”"
+panel = ExtResource("2_25y37")
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_wd6qg"]
+script = ExtResource("1_j72ma")
+speaker_name = "Blue"
+text = "“I now feel all those in every situation, in every place imaginable.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_nxu6s"]
+script = ExtResource("1_j72ma")
+speaker_name = "Blue"
+text = "“As if every corner of this life is now my own [b]room![/b]”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[resource]
+script = ExtResource("4_kfwlj")
+lines = Array[ExtResource("1_j72ma")]([SubResource("Resource_ecud5"), SubResource("Resource_7bb0l"), SubResource("Resource_7qqv2"), SubResource("Resource_ukyqi"), SubResource("Resource_qrupm"), SubResource("Resource_a1foo"), SubResource("Resource_fv1kf"), SubResource("Resource_uevlm"), SubResource("Resource_fhu0t"), SubResource("Resource_liyvw"), SubResource("Resource_3hkvj"), SubResource("Resource_wd6qg"), SubResource("Resource_nxu6s")])
+metadata/_custom_type_script = "uid://icyiph7n2cnx"
