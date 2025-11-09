@@ -341,8 +341,7 @@ bbcode_enabled = true
 scroll_following = true
 
 [node name="RemoveCoverButton" type="TextureButton" parent="."]
-visible = false
-custom_minimum_size = Vector2(100, 50)
+custom_minimum_size = Vector2(200, 50)
 layout_mode = 1
 anchors_preset = 3
 anchor_left = 1.0
@@ -355,7 +354,6 @@ offset_right = -52.0
 offset_bottom = -198.0
 grow_horizontal = 0
 grow_vertical = 0
-texture_normal = ExtResource("3_vsjab")
 stretch_mode = 0
 script = ExtResource("5_w7vhx")
 
