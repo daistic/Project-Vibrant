@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://tm8c3e1mkgqx"]
+[gd_scene load_steps=2 format=3 uid="uid://tm8c3e1mkgqx"]
 
 [ext_resource type="Script" uid="uid://ky0cdbchgtry" path="res://Entities/PuzzleGrid/PuzzleGrid.gd" id="1_0ewny"]
-[ext_resource type="Texture2D" uid="uid://bb8oneujum3ie" path="res://Assets/Puzzles/Red/Pieces/Group 45.png" id="2_fnoto"]
 
 [node name="PuzzleGrid" type="Area2D"]
 z_index = -1
@@ -11,10 +10,8 @@ script = ExtResource("1_0ewny")
 polygon_points = PackedVector2Array(-156, 6, 154, -168, 102, 164)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_fnoto")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-polygon = PackedVector2Array(-51.666656, 58.333344, -100, -5, -56.666656, -66.66666, 91.66669, -66.66666, 88.33331, 56.666687)
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="area_exited" from="." to="." method="_on_area_exited"]

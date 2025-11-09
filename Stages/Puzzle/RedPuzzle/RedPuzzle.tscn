@@ -1,7 +1,8 @@
-[gd_scene load_steps=24 format=3 uid="uid://cd7exattou3g7"]
+[gd_scene load_steps=25 format=3 uid="uid://cd7exattou3g7"]
 
 [ext_resource type="PackedScene" uid="uid://fvbglxmndqo2" path="res://Stages/Puzzle/PuzzleBase.tscn" id="1_fabju"]
 [ext_resource type="PackedScene" uid="uid://tm8c3e1mkgqx" path="res://Entities/PuzzleGrid/PuzzleGrid.tscn" id="2_bqr0f"]
+[ext_resource type="Texture2D" uid="uid://c3bednue6gp4x" path="res://Assets/Puzzles/Red/Group 27 (2).png" id="2_uxx27"]
 [ext_resource type="Texture2D" uid="uid://c0isci5i0fhi1" path="res://Assets/Puzzles/Red/Pieces/Group 32.png" id="3_i2qlf"]
 [ext_resource type="Texture2D" uid="uid://curg2tsga35wf" path="res://Assets/Puzzles/Red/Grids/Group 39.png" id="4_xoadn"]
 [ext_resource type="Texture2D" uid="uid://qpuqyu7hhjim" path="res://Assets/Puzzles/Red/Grids/path5.png" id="5_7k2jl"]
@@ -28,7 +29,13 @@
 puzzle_grids = [NodePath("Grids/PuzzleGrid"), NodePath("Grids/PuzzleGrid3"), NodePath("Grids/PuzzleGrid2"), NodePath("Grids/PuzzleGrid4"), NodePath("Grids/PuzzleGrid5"), NodePath("Grids/PuzzleGrid6"), NodePath("Grids/PuzzleGrid7"), NodePath("Grids/PuzzleGrid8"), NodePath("Grids/PuzzleGrid9"), NodePath("Grids/PuzzleGrid10")]
 next_scene_key = "comic:after red"
 
-[node name="Grids" type="Node2D" parent="." index="1"]
+[node name="Group27(2)" type="Sprite2D" parent="." index="1"]
+z_index = -1
+position = Vector2(560, 320)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_uxx27")
+
+[node name="Grids" type="Node2D" parent="." index="2"]
 
 [node name="PuzzleGrid" parent="Grids" index="0" instance=ExtResource("2_bqr0f")]
 position = Vector2(561, 427)
@@ -89,60 +96,60 @@ sprite = ExtResource("13_uxx27")
 polygon_points = PackedVector2Array(-31.666656, -63.333313, -58.333313, -33.333313, -11.6666565, 51.666687, 43.333313, 70, 56.666687, 58.333344)
 grid_id = 9
 
-[node name="PuzzleFragment" parent="." index="2" instance=ExtResource("13_w133l")]
+[node name="PuzzleFragment" parent="." index="3" instance=ExtResource("13_w133l")]
 position = Vector2(986, 287)
 sprite = ExtResource("3_i2qlf")
 polygon_points = PackedVector2Array(-10, -183.33331, -45, -3.333313, 11.666687, 111.66669, -5, 178.33334, 20, 180, 43.333313, 116.66669, -16.666656, -8.333313, 13.333313, -186.66666)
 
-[node name="PuzzleFragment2" parent="." index="3" instance=ExtResource("13_w133l")]
+[node name="PuzzleFragment2" parent="." index="4" instance=ExtResource("13_w133l")]
 position = Vector2(394, 589)
 sprite = ExtResource("15_uxx27")
 polygon_points = PackedVector2Array(-46.666656, -46.666656, -31.666656, 21.666687, 6.666687, 46.666687, 43.333313, 8.3333435)
 fragment_id = 1
 
-[node name="PuzzleFragment3" parent="." index="4" instance=ExtResource("13_w133l")]
+[node name="PuzzleFragment3" parent="." index="5" instance=ExtResource("13_w133l")]
 position = Vector2(767, 203)
 sprite = ExtResource("16_pflwm")
 polygon_points = PackedVector2Array(-10, -11.6666565, -28.333313, 11.666687, 28.333313, 5)
 fragment_id = 2
 
-[node name="PuzzleFragment4" parent="." index="5" instance=ExtResource("13_w133l")]
+[node name="PuzzleFragment4" parent="." index="6" instance=ExtResource("13_w133l")]
 position = Vector2(1014, 98)
 sprite = ExtResource("17_an1vn")
 polygon_points = PackedVector2Array(-35, -11.6666565, -25, 15, 33.333313, 20, -5, -21.666656)
 fragment_id = 3
 
-[node name="PuzzleFragment5" parent="." index="6" instance=ExtResource("13_w133l")]
+[node name="PuzzleFragment5" parent="." index="7" instance=ExtResource("13_w133l")]
 position = Vector2(98, 557)
 sprite = ExtResource("18_r36um")
 polygon_points = PackedVector2Array(-33.333313, 16.666687, 0, -28.333313, 41.666687, -33.333313, 50, -3.333313)
 fragment_id = 4
 
-[node name="PuzzleFragment6" parent="." index="7" instance=ExtResource("13_w133l")]
+[node name="PuzzleFragment6" parent="." index="8" instance=ExtResource("13_w133l")]
 position = Vector2(1082, 484)
 sprite = ExtResource("19_i2c2i")
 polygon_points = PackedVector2Array(-38.333313, -18.333313, 15, -14.999985, 26.666687, -8.333313, 38.333313, 15)
 fragment_id = 5
 
-[node name="PuzzleFragment7" parent="." index="8" instance=ExtResource("13_w133l")]
+[node name="PuzzleFragment7" parent="." index="9" instance=ExtResource("13_w133l")]
 position = Vector2(476, 43)
 sprite = ExtResource("20_tcwak")
 polygon_points = PackedVector2Array(-51.666656, 58.333344, -100, -5, -56.666656, -66.66666, 91.66669, -66.66666, 88.33331, 56.666687)
 fragment_id = 6
 
-[node name="PuzzleFragment8" parent="." index="9" instance=ExtResource("13_w133l")]
+[node name="PuzzleFragment8" parent="." index="10" instance=ExtResource("13_w133l")]
 position = Vector2(821, 458)
 sprite = ExtResource("21_6gmoy")
 polygon_points = PackedVector2Array(-48.333313, 5, -41.666656, -18.333313, -11.6666565, -33.333313, 46.666687, -24.999985, 38.333313, 10, 16.666687, 31.666687, -5, 31.666687)
 fragment_id = 7
 
-[node name="PuzzleFragment9" parent="." index="10" instance=ExtResource("13_w133l")]
+[node name="PuzzleFragment9" parent="." index="11" instance=ExtResource("13_w133l")]
 position = Vector2(259, 433)
 sprite = ExtResource("22_2ksn0")
 polygon_points = PackedVector2Array(-48.333313, 5, -41.666656, -18.333313, -11.6666565, -33.333313, 46.666687, -24.999985, 38.333313, 10, 16.666687, 31.666687, -5, 31.666687)
 fragment_id = 8
 
-[node name="PuzzleFragment10" parent="." index="11" instance=ExtResource("13_w133l")]
+[node name="PuzzleFragment10" parent="." index="12" instance=ExtResource("13_w133l")]
 position = Vector2(191, 172)
 sprite = ExtResource("23_kpw6l")
 polygon_points = PackedVector2Array(-31.666656, -63.333313, -58.333313, -33.333313, -11.6666565, 51.666687, 43.333313, 70, 56.666687, 58.333344)
