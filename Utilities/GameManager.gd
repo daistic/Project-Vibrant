@@ -10,6 +10,9 @@ var puzzle_key: String = ""
 
 var intro_options_picked: Array[bool] = [false, false, false]
 
+var black_counter: int = 0
+var white_counter: int = 0
+
 func handle_next_scene_key(next_scene_key: String) -> void:
 	if next_scene_key.contains("puzzle:"):
 		puzzle_key = next_scene_key.get_slice(":", 1)

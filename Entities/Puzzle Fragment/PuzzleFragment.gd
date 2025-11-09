@@ -5,6 +5,8 @@ extends Area2D
 @export var sprite: CompressedTexture2D
 @export var polygon_points: PackedVector2Array
 @export var fragment_id: int = 0
+@export var is_monochrome: bool = false
+@export var is_black: bool = true
 
 @onready var sprite_2d: Sprite2D = $Sprite2D
 @onready var collision_polygon_2d: CollisionPolygon2D = $CollisionPolygon2D

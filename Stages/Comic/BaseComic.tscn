@@ -1,9 +1,10 @@
-[gd_scene load_steps=15 format=3 uid="uid://dcso33gyulutw"]
+[gd_scene load_steps=17 format=3 uid="uid://dcso33gyulutw"]
 
 [ext_resource type="Script" uid="uid://cqiogfq8sk4q4" path="res://Stages/Comic/Comic.gd" id="1_3dhto"]
 [ext_resource type="Resource" uid="uid://ceciey5lhgr6a" path="res://Stages/Comic/Test/dialoguesample.tres" id="2_27l8w"]
 [ext_resource type="Texture2D" uid="uid://bk86bt7xokts0" path="res://Assets/white_texture.png" id="3_vsjab"]
 [ext_resource type="FontFile" uid="uid://bxr12aee8vmc4" path="res://Assets/Fonts/Storyboo.TTF" id="4_vsjab"]
+[ext_resource type="Script" uid="uid://x0poab2ufpp8" path="res://Common/GameButton.gd" id="5_w7vhx"]
 
 [sub_resource type="Gradient" id="Gradient_27l8w"]
 offsets = PackedFloat32Array(0, 0.8, 1)
@@ -23,6 +24,11 @@ font_size = 24
 [sub_resource type="FontVariation" id="FontVariation_27l8w"]
 base_font = ExtResource("4_vsjab")
 variation_embolden = 0.75
+
+[sub_resource type="LabelSettings" id="LabelSettings_f6177"]
+font = ExtResource("4_vsjab")
+font_size = 22
+font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="Animation" id="Animation_27l8w"]
 resource_name = "Change Panel"
@@ -334,6 +340,37 @@ theme_override_fonts/bold_font = SubResource("FontVariation_27l8w")
 bbcode_enabled = true
 scroll_following = true
 
+[node name="RemoveCoverButton" type="TextureButton" parent="."]
+visible = false
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -152.0
+offset_top = -248.0
+offset_right = -52.0
+offset_bottom = -198.0
+grow_horizontal = 0
+grow_vertical = 0
+texture_normal = ExtResource("3_vsjab")
+stretch_mode = 0
+script = ExtResource("5_w7vhx")
+
+[node name="Label" type="Label" parent="RemoveCoverButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Remove Cover"
+label_settings = SubResource("LabelSettings_f6177")
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="TypingTimer" type="Timer" parent="."]
 wait_time = 0.05
 one_shot = true
@@ -343,4 +380,5 @@ libraries = {
 &"": SubResource("AnimationLibrary_vsjab")
 }
 
+[connection signal="pressed" from="RemoveCoverButton" to="." method="_on_remove_cover_button_pressed"]
 [connection signal="timeout" from="TypingTimer" to="." method="_on_timer_timeout"]

@@ -12,6 +12,8 @@ extends Control
 @onready var typing_timer: Timer = $TypingTimer
 @onready var comic_animation: AnimationPlayer = $ComicAnimation
 
+@onready var remove_cover_button: GameButton = $RemoveCoverButton
+
 @export var dialogue: DialogueResource
 @export var next_scene_key: String
 
@@ -57,6 +59,9 @@ func _handle_line_events() -> void:
 			
 			typing_timer.wait_time = 0.05
 			_handle_text_area()
+		DialogueStruct.EVENTS.REMOVE_COVER_POPUP:
+			text_area.hide()
+			remove_cover_button.show()
 		DialogueStruct.EVENTS.NONE:
 			if dialogue.lines[line_index].panel != null:
 				_direct_panel_change()
@@ -118,3 +123,8 @@ func _next_line_index() -> void:
 
 func _on_timer_timeout() -> void:
 	_type_text()
+
+func _on_remove_cover_button_pressed() -> void:
+	line_index += 1
+	remove_cover_button.hide()
+	_handle_line_events()

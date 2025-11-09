@@ -1,0 +1,88 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=18 format=3 uid="uid://c8rd5s6viee4t"]
+
+[ext_resource type="Script" uid="uid://bf5o4ybofcud1" path="res://Entities/Dialogue/DialogueStruct.gd" id="1_ckdf5"]
+[ext_resource type="Texture2D" uid="uid://bwffry8gqsx8m" path="res://Assets/Drawn/Yellow Dimension/yellowd2.png" id="2_kkl38"]
+[ext_resource type="Texture2D" uid="uid://cohft6img6xwp" path="res://Assets/Drawn/Yellow Dimension/yellowd3.png" id="3_ckdf5"]
+[ext_resource type="Texture2D" uid="uid://dvi8ogkuwj5u" path="res://Assets/black_texture.png" id="3_vf3ba"]
+[ext_resource type="Script" uid="uid://icyiph7n2cnx" path="res://Entities/Dialogue/DialogueResource.gd" id="4_000bf"]
+
+[sub_resource type="Resource" id="Resource_vf3ba"]
+script = ExtResource("1_ckdf5")
+speaker_name = "Yellow"
+text = "“...”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_5ybby"]
+script = ExtResource("1_ckdf5")
+speaker_name = "Yellow"
+text = "“B-black…”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_000bf"]
+script = ExtResource("1_ckdf5")
+speaker_name = "Yellow"
+text = "“...W-what is happening,,,”"
+panel = ExtResource("3_ckdf5")
+line_event = 3
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_bpt4d"]
+script = ExtResource("1_ckdf5")
+speaker_name = "Yellow"
+text = "“W-what is this… [b]awful[/b] feeling?”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_lw6d3"]
+script = ExtResource("1_ckdf5")
+speaker_name = "Yellow"
+text = "“I-It’s… [b]scary[/b]…”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_b4d1j"]
+script = ExtResource("1_ckdf5")
+speaker_name = "Yellow"
+text = "“I-It’s… [b]really scary[/b]…”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_mkde5"]
+script = ExtResource("1_ckdf5")
+speaker_name = "Yellow"
+text = "“G-guh-! W-what have [b]you[/b] done??”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_7gqo0"]
+script = ExtResource("1_ckdf5")
+speaker_name = "Yellow"
+text = "“You’ve [b]betrayed[/b] me..!”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_75y61"]
+script = ExtResource("1_ckdf5")
+text = "“...”"
+panel = ExtResource("3_vf3ba")
+line_event = 3
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_6nnh6"]
+script = ExtResource("1_ckdf5")
+text = "“.................................”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_xkxwr"]
+script = ExtResource("1_ckdf5")
+text = "“2 more to go”"
+panel = ExtResource("2_kkl38")
+line_event = 3
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_smrnb"]
+script = ExtResource("1_ckdf5")
+text = " "
+panel = ExtResource("3_vf3ba")
+line_event = 3
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[resource]
+script = ExtResource("4_000bf")
+lines = Array[ExtResource("1_ckdf5")]([SubResource("Resource_vf3ba"), SubResource("Resource_5ybby"), SubResource("Resource_000bf"), SubResource("Resource_bpt4d"), SubResource("Resource_lw6d3"), SubResource("Resource_b4d1j"), SubResource("Resource_mkde5"), SubResource("Resource_7gqo0"), SubResource("Resource_75y61"), SubResource("Resource_6nnh6"), SubResource("Resource_xkxwr"), SubResource("Resource_smrnb")])
+metadata/_custom_type_script = "uid://icyiph7n2cnx"

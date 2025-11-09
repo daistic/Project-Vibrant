@@ -1,3 +1,6 @@
-[gd_scene format=3 uid="uid://daggm4ioimut0"]
+[gd_scene load_steps=2 format=3 uid="uid://daggm4ioimut0"]
+
+[ext_resource type="Script" uid="uid://bof8doi1s1dxn" path="res://Stages/Puzzle/Entry/PuzzleEntry.gd" id="1_suqrb"]
 
 [node name="PuzzleEntry" type="Node2D"]
+script = ExtResource("1_suqrb")

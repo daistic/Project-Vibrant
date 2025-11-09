@@ -1,14 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://tm8c3e1mkgqx"]
+[gd_scene load_steps=2 format=3 uid="uid://tm8c3e1mkgqx"]
 
 [ext_resource type="Script" uid="uid://ky0cdbchgtry" path="res://Entities/PuzzleGrid/PuzzleGrid.gd" id="1_0ewny"]
-[ext_resource type="Texture2D" uid="uid://bx1ua75inori8" path="res://Assets/Placeholders/fragment placeholder.png" id="2_fnoto"]
 
 [node name="PuzzleGrid" type="Area2D"]
 z_index = -1
 position = Vector2(314, 161)
-scale = Vector2(0.5, 0.5)
+scale = Vector2(0.6, 0.6)
 script = ExtResource("1_0ewny")
-sprite = ExtResource("2_fnoto")
 polygon_points = PackedVector2Array(-156, 6, 154, -168, 102, 164)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

@@ -5,3 +5,4 @@
 
 [node name="IntroAfterOptions" instance=ExtResource("1_ystay")]
 dialogue = ExtResource("2_3qiya")
+next_scene_key = "comic:yellow dimension"

@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://rq55mcauhsnx"]
+
+[ext_resource type="PackedScene" uid="uid://dcso33gyulutw" path="res://Stages/Comic/BaseComic.tscn" id="1_g1fl2"]
+[ext_resource type="Resource" uid="uid://ssks6i74h5lv" path="res://Stages/Comic/YellowDimension/YellowDimension.tres" id="2_7kpnj"]
+
+[node name="YellowDimension" instance=ExtResource("1_g1fl2")]
+dialogue = ExtResource("2_7kpnj")
+next_scene_key = "puzzle:yellow puzzle"

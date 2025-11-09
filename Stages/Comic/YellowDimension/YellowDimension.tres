@@ -1,0 +1,183 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=33 format=3 uid="uid://ssks6i74h5lv"]
+
+[ext_resource type="Script" uid="uid://bf5o4ybofcud1" path="res://Entities/Dialogue/DialogueStruct.gd" id="1_aqxtl"]
+[ext_resource type="Texture2D" uid="uid://ddyfmm1yn6c0h" path="res://Assets/Drawn/Yellow Dimension/yellowd1.png" id="2_3qtup"]
+[ext_resource type="Script" uid="uid://icyiph7n2cnx" path="res://Entities/Dialogue/DialogueResource.gd" id="4_gdlux"]
+
+[sub_resource type="Resource" id="Resource_e5mtr"]
+script = ExtResource("1_aqxtl")
+speaker_name = "Yellow"
+text = "“Behold! My stained glass art!”"
+panel = ExtResource("2_3qtup")
+line_event = 3
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_3qtup"]
+script = ExtResource("1_aqxtl")
+speaker_name = "Yellow"
+text = "“Surely you haven’t forgotten this!”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_aqxtl"]
+script = ExtResource("1_aqxtl")
+text = "“...”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_vfx8v"]
+script = ExtResource("1_aqxtl")
+speaker_name = "Yellow"
+text = "“What? Did you actually forget?”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_ygepo"]
+script = ExtResource("1_aqxtl")
+speaker_name = "Yellow"
+text = "“BAHAHAHA. Oh silly black! Stained glasses art is our very [b]heart and soul[/b].”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_gdlux"]
+script = ExtResource("1_aqxtl")
+speaker_name = "Yellow"
+text = "“Through these, our emotions can CONNECT with the world!”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_ueqnl"]
+script = ExtResource("1_aqxtl")
+speaker_name = "Yellow"
+text = "“Of course, ALL red, blue, white and you have their own stained glass art!”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_tdhsv"]
+script = ExtResource("1_aqxtl")
+speaker_name = "Yellow"
+text = "“Although, uniquely yours and white share the same stained glass!”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_ytv7x"]
+script = ExtResource("1_aqxtl")
+speaker_name = "Yellow"
+text = "“...With mine, due to the help of [b]white’s part[/b], the world can feel things such as [b]joy and optimism[/b]!!”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_ihl8h"]
+script = ExtResource("1_aqxtl")
+text = "\"...\""
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_secd7"]
+script = ExtResource("1_aqxtl")
+speaker_name = "Yellow"
+text = "“You’re staring at it quite intensely, still don't ring a bell mayhaps?”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_d4qk4"]
+script = ExtResource("1_aqxtl")
+speaker_name = "Yellow"
+text = "“Well, I wouldn’t blame you!”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_eww34"]
+script = ExtResource("1_aqxtl")
+speaker_name = "Yellow"
+text = "“Ever since your absence, parts of the stained glass shattered.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_u8x0q"]
+script = ExtResource("1_aqxtl")
+speaker_name = "Yellow"
+text = "“And that would mainly be [b]your pieces[/b], black.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_47b2m"]
+script = ExtResource("1_aqxtl")
+speaker_name = "Yellow"
+text = "“And due to the removal of the black pieces, yellow, which SHOULD’VE have emotions such as [b]anxiety, caution, and fear[/b], are NO MORE!” "
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_bo720"]
+script = ExtResource("1_aqxtl")
+speaker_name = "Yellow"
+text = "“...you see! This is how I have BECOME more joyous than ever!”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_4auqo"]
+script = ExtResource("1_aqxtl")
+speaker_name = "Yellow"
+text = "“I am NO LONGER the anxious person you’ve known since your time here!”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_4tq24"]
+script = ExtResource("1_aqxtl")
+speaker_name = "Yellow"
+text = "“Teehee, that’s why I wanted to show you this black!”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_mdq8f"]
+script = ExtResource("1_aqxtl")
+speaker_name = "Yellow"
+text = "“The root of emotions of yellow itself is in front of you.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_cekmi"]
+script = ExtResource("1_aqxtl")
+speaker_name = "Yellow"
+text = "“...oh my…”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_nd2p4"]
+script = ExtResource("1_aqxtl")
+speaker_name = "Yellow"
+text = "“You’re looking really serious with all those frowns.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_stoff"]
+script = ExtResource("1_aqxtl")
+speaker_name = "Yellow"
+text = "“GLAD THAT YOU’RE AS EXCITED AS I AM!!!”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_5pg7n"]
+script = ExtResource("1_aqxtl")
+speaker_name = "Yellow"
+text = "“Feel free to take a look at it AS MUCH AS YOU WANT!!”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_hii74"]
+script = ExtResource("1_aqxtl")
+speaker_name = "Yellow"
+text = "“Remember though! No touching!”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_xwxom"]
+script = ExtResource("1_aqxtl")
+speaker_name = "Yellow"
+text = "“If the cover got removed, I would lose my soul! Which means… I won’t be able to speak or move!!”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_oa3yr"]
+script = ExtResource("1_aqxtl")
+speaker_name = "Yellow"
+text = "“But no worries though! if you accidentally do so, you can always put the cover back and it’ll reset me!”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_hgsni"]
+script = ExtResource("1_aqxtl")
+line_event = 8
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_ful86"]
+script = ExtResource("1_aqxtl")
+speaker_name = "Yellow"
+text = "“Huh? Wait, what are you-”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_r38ta"]
+script = ExtResource("1_aqxtl")
+panel = ExtResource("2_3qtup")
+line_event = 5
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[resource]
+script = ExtResource("4_gdlux")
+lines = Array[ExtResource("1_aqxtl")]([SubResource("Resource_e5mtr"), SubResource("Resource_3qtup"), SubResource("Resource_aqxtl"), SubResource("Resource_vfx8v"), SubResource("Resource_ygepo"), SubResource("Resource_gdlux"), SubResource("Resource_ueqnl"), SubResource("Resource_tdhsv"), SubResource("Resource_ytv7x"), SubResource("Resource_ihl8h"), SubResource("Resource_secd7"), SubResource("Resource_d4qk4"), SubResource("Resource_eww34"), SubResource("Resource_u8x0q"), SubResource("Resource_47b2m"), SubResource("Resource_bo720"), SubResource("Resource_4auqo"), SubResource("Resource_4tq24"), SubResource("Resource_mdq8f"), SubResource("Resource_cekmi"), SubResource("Resource_nd2p4"), SubResource("Resource_stoff"), SubResource("Resource_5pg7n"), SubResource("Resource_hii74"), SubResource("Resource_xwxom"), SubResource("Resource_oa3yr"), SubResource("Resource_hgsni"), SubResource("Resource_ful86"), SubResource("Resource_r38ta")])
+metadata/_custom_type_script = "uid://icyiph7n2cnx"
