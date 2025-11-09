@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://b0s85887i47yy"]
+[gd_scene load_steps=25 format=3 uid="uid://b0s85887i47yy"]
 
 [ext_resource type="PackedScene" uid="uid://fvbglxmndqo2" path="res://Stages/Puzzle/PuzzleBase.tscn" id="1_k7mtm"]
 [ext_resource type="Texture2D" uid="uid://bq2vfyp86qqx0" path="res://Assets/Puzzles/Blue/Group 30.png" id="2_pkd2o"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://bslwiehnjgmpy" path="res://Assets/Puzzles/Blue/Grids/Group 60.png" id="5_fd3x0"]
 [ext_resource type="Texture2D" uid="uid://c4sp5h2qojslh" path="res://Assets/Puzzles/Blue/Grids/Group 61.png" id="6_j8qkc"]
 [ext_resource type="Texture2D" uid="uid://c8iw081rk6tui" path="res://Assets/Puzzles/Blue/Grids/Group 62.png" id="7_x625w"]
+[ext_resource type="Texture2D" uid="uid://bq0fxd4g0vg4r" path="res://Assets/Puzzles/Blue/Grids/Group 63.png" id="8_tef7g"]
 [ext_resource type="Texture2D" uid="uid://bar5wdxjghgnw" path="res://Assets/Puzzles/Blue/Grids/Group 64.png" id="9_rb73b"]
 [ext_resource type="Texture2D" uid="uid://dn2803k2fpj53" path="res://Assets/Puzzles/Blue/Grids/Group 65.png" id="10_u5krs"]
 [ext_resource type="Texture2D" uid="uid://dmu5dsxouhme0" path="res://Assets/Puzzles/Blue/Grids/Group 66.png" id="11_wi7wj"]
@@ -61,6 +62,7 @@ grid_id = 3
 
 [node name="PuzzleGrid5" parent="Grids" index="4" instance=ExtResource("3_6ok3d")]
 position = Vector2(616, 430)
+sprite = ExtResource("8_tef7g")
 polygon_points = PackedVector2Array(-91.66666, 98.33334, -15, -41.666656, 73.33331, -114.999985, 101.66669, -89.999985, -83.33331, 113.33334)
 grid_id = 4
 

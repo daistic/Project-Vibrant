@@ -81,7 +81,7 @@ grid_id = 6
 [node name="PuzzleGrid8" parent="Grids" index="7" instance=ExtResource("2_bqr0f")]
 position = Vector2(560, 236.00002)
 sprite = ExtResource("10_eyh4d")
-polygon_points = PackedVector2Array(-51.666656, 58.333344, -100, -5, -56.666656, -66.66666, 91.66669, -66.66666, 88.33331, 56.666687)
+polygon_points = PackedVector2Array(-90, 58.333344, -91.66666, -58.333313, 86.66669, -61.666656, 81.66669, 65)
 grid_id = 7
 
 [node name="PuzzleGrid9" parent="Grids" index="8" instance=ExtResource("2_bqr0f")]
@@ -140,7 +140,7 @@ fragment_id = 6
 [node name="PuzzleFragment8" parent="." index="10" instance=ExtResource("13_w133l")]
 position = Vector2(821, 458)
 sprite = ExtResource("21_6gmoy")
-polygon_points = PackedVector2Array(-48.333313, 5, -41.666656, -18.333313, -11.6666565, -33.333313, 46.666687, -24.999985, 38.333313, 10, 16.666687, 31.666687, -5, 31.666687)
+polygon_points = PackedVector2Array(-90, 58.333344, -91.66666, -58.333313, 86.66669, -61.666656, 81.66669, 65)
 fragment_id = 7
 
 [node name="PuzzleFragment9" parent="." index="11" instance=ExtResource("13_w133l")]
