@@ -1,15 +1,22 @@
-[gd_scene load_steps=7 format=3 uid="uid://b5pmvvi56h3vd"]
+[gd_scene load_steps=9 format=3 uid="uid://b5pmvvi56h3vd"]
 
 [ext_resource type="Script" uid="uid://blsdg7f0y2xrx" path="res://Stages/IntroOptions/IntroOptions.gd" id="1_dnsol"]
 [ext_resource type="Texture2D" uid="uid://cid6xr882pgdm" path="res://Assets/Drawn/Duction/all3.png" id="1_uojr1"]
-[ext_resource type="Texture2D" uid="uid://bk86bt7xokts0" path="res://Assets/white_texture.png" id="2_8qp2h"]
 [ext_resource type="Script" uid="uid://x0poab2ufpp8" path="res://Common/GameButton.gd" id="3_dnsol"]
+[ext_resource type="Texture2D" uid="uid://dvi8ogkuwj5u" path="res://Assets/black_texture.png" id="3_mtdub"]
 [ext_resource type="FontFile" uid="uid://bxr12aee8vmc4" path="res://Assets/Fonts/Storyboo.TTF" id="4_mtdub"]
 
-[sub_resource type="LabelSettings" id="LabelSettings_0lq5e"]
+[sub_resource type="LabelSettings" id="LabelSettings_7ari0"]
 font = ExtResource("4_mtdub")
 font_size = 22
-font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_mtdub"]
+font = ExtResource("4_mtdub")
+font_size = 22
+
+[sub_resource type="LabelSettings" id="LabelSettings_dnsol"]
+font = ExtResource("4_mtdub")
+font_size = 22
 
 [node name="IntroOptions" type="Control"]
 layout_mode = 3
@@ -49,7 +56,8 @@ theme_override_constants/separation = 50
 [node name="YellowButton" type="TextureButton" parent="VBoxContainer"]
 custom_minimum_size = Vector2(100, 50)
 layout_mode = 2
-texture_normal = ExtResource("2_8qp2h")
+texture_normal = ExtResource("3_mtdub")
+ignore_texture_size = true
 stretch_mode = 0
 script = ExtResource("3_dnsol")
 
@@ -61,14 +69,15 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Yellow"
-label_settings = SubResource("LabelSettings_0lq5e")
+label_settings = SubResource("LabelSettings_7ari0")
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="BlueButton" type="TextureButton" parent="VBoxContainer"]
 custom_minimum_size = Vector2(100, 50)
 layout_mode = 2
-texture_normal = ExtResource("2_8qp2h")
+texture_normal = ExtResource("3_mtdub")
+ignore_texture_size = true
 stretch_mode = 0
 script = ExtResource("3_dnsol")
 
@@ -80,14 +89,15 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Blue"
-label_settings = SubResource("LabelSettings_0lq5e")
+label_settings = SubResource("LabelSettings_mtdub")
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="RedButton" type="TextureButton" parent="VBoxContainer"]
 custom_minimum_size = Vector2(100, 50)
 layout_mode = 2
-texture_normal = ExtResource("2_8qp2h")
+texture_normal = ExtResource("3_mtdub")
+ignore_texture_size = true
 stretch_mode = 0
 script = ExtResource("3_dnsol")
 
@@ -99,7 +109,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Red"
-label_settings = SubResource("LabelSettings_0lq5e")
+label_settings = SubResource("LabelSettings_dnsol")
 horizontal_alignment = 1
 vertical_alignment = 1
 

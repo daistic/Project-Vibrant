@@ -1,14 +1,15 @@
-[gd_scene load_steps=17 format=3 uid="uid://dcso33gyulutw"]
+[gd_scene load_steps=18 format=3 uid="uid://dcso33gyulutw"]
 
 [ext_resource type="Script" uid="uid://cqiogfq8sk4q4" path="res://Stages/Comic/Comic.gd" id="1_3dhto"]
 [ext_resource type="Resource" uid="uid://ceciey5lhgr6a" path="res://Stages/Comic/Test/dialoguesample.tres" id="2_27l8w"]
 [ext_resource type="Texture2D" uid="uid://bk86bt7xokts0" path="res://Assets/white_texture.png" id="3_vsjab"]
 [ext_resource type="FontFile" uid="uid://bxr12aee8vmc4" path="res://Assets/Fonts/Storyboo.TTF" id="4_vsjab"]
+[ext_resource type="Texture2D" uid="uid://dvi8ogkuwj5u" path="res://Assets/black_texture.png" id="5_f6177"]
 [ext_resource type="Script" uid="uid://x0poab2ufpp8" path="res://Common/GameButton.gd" id="5_w7vhx"]
 
 [sub_resource type="Gradient" id="Gradient_27l8w"]
-offsets = PackedFloat32Array(0, 0.8, 1)
-colors = PackedColorArray(0, 0, 0, 0.6666667, 0, 0, 0, 0.47058824, 0, 0, 0, 0.27450982)
+offsets = PackedFloat32Array(0, 0.6, 0.8, 0.9, 1)
+colors = PackedColorArray(0, 0, 0, 0.6666667, 0, 0, 0, 0.47058824, 0, 0, 0, 0.27450982, 0, 0, 0, 0.05882353, 0, 0, 0, 0)
 metadata/_snap_enabled = true
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_vsjab"]
@@ -27,8 +28,7 @@ variation_embolden = 0.75
 
 [sub_resource type="LabelSettings" id="LabelSettings_f6177"]
 font = ExtResource("4_vsjab")
-font_size = 22
-font_color = Color(0, 0, 0, 1)
+font_size = 28
 
 [sub_resource type="Animation" id="Animation_27l8w"]
 resource_name = "Change Panel"
@@ -294,7 +294,7 @@ expand_mode = 3
 
 [node name="TextArea" type="TextureRect" parent="."]
 visible = false
-custom_minimum_size = Vector2(0, 150)
+custom_minimum_size = Vector2(0, 175)
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
@@ -337,11 +337,15 @@ layout_mode = 2
 size_flags_vertical = 3
 theme_override_fonts/normal_font = ExtResource("4_vsjab")
 theme_override_fonts/bold_font = SubResource("FontVariation_27l8w")
+theme_override_font_sizes/normal_font_size = 20
+theme_override_font_sizes/bold_font_size = 20
 bbcode_enabled = true
+text = "Loru  Ipsun"
 scroll_following = true
 
 [node name="RemoveCoverButton" type="TextureButton" parent="."]
-custom_minimum_size = Vector2(200, 50)
+visible = false
+custom_minimum_size = Vector2(250, 50)
 layout_mode = 1
 anchors_preset = 3
 anchor_left = 1.0
@@ -354,6 +358,8 @@ offset_right = -52.0
 offset_bottom = -198.0
 grow_horizontal = 0
 grow_vertical = 0
+texture_normal = ExtResource("5_f6177")
+ignore_texture_size = true
 stretch_mode = 0
 script = ExtResource("5_w7vhx")
 
