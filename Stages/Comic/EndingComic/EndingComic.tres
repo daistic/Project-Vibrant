@@ -1,0 +1,375 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=69 format=3 uid="uid://dcfvafofdqwiv"]
+
+[ext_resource type="Script" uid="uid://bf5o4ybofcud1" path="res://Entities/Dialogue/DialogueStruct.gd" id="1_162pg"]
+[ext_resource type="Texture2D" uid="uid://bqy1g5ec33068" path="res://Assets/Drawn/Ending/White1.png" id="2_ebowm"]
+[ext_resource type="Texture2D" uid="uid://cjxw53vcp41t5" path="res://Assets/Drawn/Ending/White2.png" id="3_6bmlf"]
+[ext_resource type="Texture2D" uid="uid://2ef3p1jcqgcy" path="res://Assets/Drawn/Ending/flashback2.png" id="4_ajxhl"]
+[ext_resource type="Script" uid="uid://icyiph7n2cnx" path="res://Entities/Dialogue/DialogueResource.gd" id="4_lrd0h"]
+[ext_resource type="Texture2D" uid="uid://cqpwtov5me1l4" path="res://Assets/Drawn/Ending/flashback3.png" id="5_oeml3"]
+[ext_resource type="Texture2D" uid="uid://c2y2ms8m3kmx6" path="res://Assets/Drawn/Ending/flashback4.png" id="6_52b3a"]
+[ext_resource type="Texture2D" uid="uid://dvi8ogkuwj5u" path="res://Assets/black_texture.png" id="7_5abdy"]
+[ext_resource type="Texture2D" uid="uid://c3sgqfl8fh46n" path="res://Assets/Drawn/Ending/flashback1.png" id="8_utx3b"]
+[ext_resource type="Texture2D" uid="uid://d3muesgq8bvqk" path="res://Assets/Drawn/Ending/whiteending.png" id="9_6dvj1"]
+
+[sub_resource type="Resource" id="Resource_buwpa"]
+script = ExtResource("1_162pg")
+speaker_name = "White"
+text = "“...hello old friend”"
+panel = ExtResource("2_ebowm")
+line_event = 3
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_t4eck"]
+script = ExtResource("1_162pg")
+text = "“....”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_gvqye"]
+script = ExtResource("1_162pg")
+speaker_name = "White"
+text = "“You caused quite the scene again huh?”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_bouoh"]
+script = ExtResource("1_162pg")
+speaker_name = "White"
+text = "“I watched everything.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_5cpeg"]
+script = ExtResource("1_162pg")
+speaker_name = "White"
+text = "“...after running away and disappearing like that years ago.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_w3lf4"]
+script = ExtResource("1_162pg")
+speaker_name = "White"
+text = "“...so, what's with the sudden change of heart?”"
+panel = ExtResource("3_6bmlf")
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_mw6i4"]
+script = ExtResource("1_162pg")
+text = "“.....”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_cjeeu"]
+script = ExtResource("1_162pg")
+speaker_name = "White"
+text = "“Quiet as always.” "
+panel = ExtResource("2_ebowm")
+line_event = 3
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_xyymm"]
+script = ExtResource("1_162pg")
+speaker_name = "White"
+text = "“Glad to know you are still the black we know.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_jqwar"]
+script = ExtResource("1_162pg")
+speaker_name = "White"
+text = "“...or is it that you’re in a dilemma?”"
+panel = ExtResource("3_6bmlf")
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_0c78s"]
+script = ExtResource("1_162pg")
+speaker_name = "White"
+text = "“You’ve been absent for years, maybe even decades.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_qk1rn"]
+script = ExtResource("1_162pg")
+speaker_name = "White"
+text = "“But we’ve been here together for millennia.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_0jtne"]
+script = ExtResource("1_162pg")
+speaker_name = "White"
+text = "“Care to share, old friend?”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_q7em5"]
+script = ExtResource("1_162pg")
+text = "“..................”"
+panel = ExtResource("2_ebowm")
+line_event = 3
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_347f3"]
+script = ExtResource("1_162pg")
+speaker_name = "Black"
+text = "“...They look happier.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_7qctt"]
+script = ExtResource("1_162pg")
+speaker_name = "Black"
+text = "“All those years, I took a look at the world.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_3xrs1"]
+script = ExtResource("1_162pg")
+speaker_name = "Black"
+text = "“Everyone looks happier.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_yxgyn"]
+script = ExtResource("1_162pg")
+speaker_name = "Black"
+text = "“Maybe breaking myself off of the piece was the right choice…”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_i1cx7"]
+script = ExtResource("1_162pg")
+speaker_name = "Black"
+text = "“...My existence only brings suffering and pain…”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_uwk5e"]
+script = ExtResource("1_162pg")
+speaker_name = "Black"
+text = "“...or so I thought.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_a7fmg"]
+script = ExtResource("1_162pg")
+speaker_name = "White"
+text = "“Or so you thought?”"
+panel = ExtResource("3_6bmlf")
+line_event = 3
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_1vpkw"]
+script = ExtResource("1_162pg")
+text = "“.........”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_kdt6w"]
+script = ExtResource("1_162pg")
+speaker_name = "Black"
+text = "“Red, blue, yellow. Their words were… not nice.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_c47l1"]
+script = ExtResource("1_162pg")
+speaker_name = "White"
+text = "“Hooh~ care to explain?”"
+panel = ExtResource("2_ebowm")
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_fbe1c"]
+script = ExtResource("1_162pg")
+speaker_name = "Black"
+text = "“If you’ve been watching then you would understand.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_qctk5"]
+script = ExtResource("1_162pg")
+speaker_name = "Black"
+text = "“The way they word things, talk about me, is as if they’re glad that I’m gone.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_juyk1"]
+script = ExtResource("1_162pg")
+speaker_name = "White"
+text = "“We all know they didn’t mean it that way.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_8hdfe"]
+script = ExtResource("1_162pg")
+speaker_name = "White"
+text = "“But knowing you. Surely there’s more to it.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_jcfhi"]
+script = ExtResource("1_162pg")
+speaker_name = "Black"
+text = "“...at first glance it’s a small thing.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_cwic5"]
+script = ExtResource("1_162pg")
+speaker_name = "Black"
+text = "“But then you realize…\""
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_b7g30"]
+script = ExtResource("1_162pg")
+speaker_name = "Black"
+text = "“...They don’t even know what is right or wrong.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_5ctra"]
+script = ExtResource("1_162pg")
+text = "“........”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_wnfni"]
+script = ExtResource("1_162pg")
+text = "“When someone’s wrong… they won’t stop them.”"
+panel = ExtResource("4_ajxhl")
+line_event = 3
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_nog4w"]
+script = ExtResource("1_162pg")
+text = "“When danger approaches… they won’t stay alert.”"
+panel = ExtResource("5_oeml3")
+line_event = 3
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_66nal"]
+script = ExtResource("1_162pg")
+text = "“When someone dies… they won’t grieve.”"
+panel = ExtResource("6_52b3a")
+line_event = 3
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_jthof"]
+script = ExtResource("1_162pg")
+speaker_name = "Black"
+text = "“I wonder if that is the right thing.”"
+panel = ExtResource("3_6bmlf")
+line_event = 3
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_hj8dj"]
+script = ExtResource("1_162pg")
+speaker_name = "Black"
+text = "“Without the scale of positive and negative, judgement is impossible afterall.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_ulylx"]
+script = ExtResource("1_162pg")
+text = "“.....”"
+panel = ExtResource("2_ebowm")
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_m2fab"]
+script = ExtResource("1_162pg")
+speaker_name = "Black"
+text = "“...But then…”"
+panel = ExtResource("7_5abdy")
+line_event = 3
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_je4as"]
+script = ExtResource("1_162pg")
+text = "”...I saw how happy everyone has become.\""
+panel = ExtResource("8_utx3b")
+line_event = 3
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_h24tb"]
+script = ExtResource("1_162pg")
+text = "“ How much they’ve changed and developed.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_v1nde"]
+script = ExtResource("1_162pg")
+text = "“...I began to doubt again.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_dj885"]
+script = ExtResource("1_162pg")
+text = "“Maybe I’m just overthinking it.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_rne3m"]
+script = ExtResource("1_162pg")
+text = "“No matter what happens…”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_8072b"]
+script = ExtResource("1_162pg")
+text = "“...as long as everyone’s happy, everything will be fine.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_8lp48"]
+script = ExtResource("1_162pg")
+text = "“......”"
+panel = ExtResource("2_ebowm")
+line_event = 3
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_ccyaf"]
+script = ExtResource("1_162pg")
+speaker_name = "White"
+text = "“...well, you’ve come this far.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_8laae"]
+script = ExtResource("1_162pg")
+text = "“...”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_e05br"]
+script = ExtResource("1_162pg")
+speaker_name = "White"
+text = "“...I won’t stop you. “"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_mnrtd"]
+script = ExtResource("1_162pg")
+speaker_name = "White"
+text = "“You know your answer more than anyone as you’ve seen it yourself.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_irib8"]
+script = ExtResource("1_162pg")
+panel = ExtResource("2_ebowm")
+line_event = 5
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_qep0x"]
+script = ExtResource("1_162pg")
+speaker_name = "White"
+text = " “Now the last decision is on your hand.”"
+panel = ExtResource("9_6dvj1")
+line_event = 3
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_8sfr8"]
+script = ExtResource("1_162pg")
+speaker_name = "White"
+text = "“By putting yourself back in this piece…”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_ny7ep"]
+script = ExtResource("1_162pg")
+speaker_name = "White"
+text = "“The whole world can feel darkness once more.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_en81m"]
+script = ExtResource("1_162pg")
+speaker_name = "White"
+text = "“And should you not…”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_7jrll"]
+script = ExtResource("1_162pg")
+speaker_name = "White"
+text = "“... the whole world will be happy in any situation imagineable.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_rt72p"]
+script = ExtResource("1_162pg")
+speaker_name = "White"
+text = "“...go ahead.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_ebowm"]
+script = ExtResource("1_162pg")
+line_event = 8
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[resource]
+script = ExtResource("4_lrd0h")
+lines = Array[ExtResource("1_162pg")]([SubResource("Resource_buwpa"), SubResource("Resource_t4eck"), SubResource("Resource_gvqye"), SubResource("Resource_bouoh"), SubResource("Resource_5cpeg"), SubResource("Resource_w3lf4"), SubResource("Resource_mw6i4"), SubResource("Resource_cjeeu"), SubResource("Resource_xyymm"), SubResource("Resource_jqwar"), SubResource("Resource_0c78s"), SubResource("Resource_qk1rn"), SubResource("Resource_0jtne"), SubResource("Resource_q7em5"), SubResource("Resource_347f3"), SubResource("Resource_7qctt"), SubResource("Resource_3xrs1"), SubResource("Resource_yxgyn"), SubResource("Resource_i1cx7"), SubResource("Resource_uwk5e"), SubResource("Resource_a7fmg"), SubResource("Resource_1vpkw"), SubResource("Resource_kdt6w"), SubResource("Resource_c47l1"), SubResource("Resource_fbe1c"), SubResource("Resource_qctk5"), SubResource("Resource_juyk1"), SubResource("Resource_8hdfe"), SubResource("Resource_jcfhi"), SubResource("Resource_cwic5"), SubResource("Resource_b7g30"), SubResource("Resource_5ctra"), SubResource("Resource_wnfni"), SubResource("Resource_nog4w"), SubResource("Resource_66nal"), SubResource("Resource_jthof"), SubResource("Resource_hj8dj"), SubResource("Resource_ulylx"), SubResource("Resource_m2fab"), SubResource("Resource_je4as"), SubResource("Resource_h24tb"), SubResource("Resource_v1nde"), SubResource("Resource_dj885"), SubResource("Resource_rne3m"), SubResource("Resource_8072b"), SubResource("Resource_8lp48"), SubResource("Resource_ccyaf"), SubResource("Resource_8laae"), SubResource("Resource_e05br"), SubResource("Resource_mnrtd"), SubResource("Resource_irib8"), SubResource("Resource_qep0x"), SubResource("Resource_8sfr8"), SubResource("Resource_ny7ep"), SubResource("Resource_en81m"), SubResource("Resource_7jrll"), SubResource("Resource_rt72p"), SubResource("Resource_ebowm")])
+metadata/_custom_type_script = "uid://icyiph7n2cnx"

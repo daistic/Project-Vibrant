@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=10 format=3 uid="uid://c3f02at5qmxyy"]
+
+[ext_resource type="Script" uid="uid://bf5o4ybofcud1" path="res://Entities/Dialogue/DialogueStruct.gd" id="1_e2yrb"]
+[ext_resource type="Texture2D" uid="uid://d3muesgq8bvqk" path="res://Assets/Drawn/Ending/whiteending.png" id="2_ai65y"]
+[ext_resource type="Texture2D" uid="uid://dmfehr0awb414" path="res://Assets/Drawn/Ending/whiteending2.png" id="3_1vclp"]
+[ext_resource type="Texture2D" uid="uid://dvi8ogkuwj5u" path="res://Assets/black_texture.png" id="4_7uscc"]
+[ext_resource type="Script" uid="uid://icyiph7n2cnx" path="res://Entities/Dialogue/DialogueResource.gd" id="4_eg846"]
+
+[sub_resource type="Resource" id="Resource_pkhvm"]
+script = ExtResource("1_e2yrb")
+panel = ExtResource("2_ai65y")
+line_event = 2
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_c82my"]
+script = ExtResource("1_e2yrb")
+text = "White Ending"
+panel = ExtResource("3_1vclp")
+line_event = 3
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_flgl1"]
+script = ExtResource("1_e2yrb")
+text = " "
+panel = ExtResource("4_7uscc")
+line_event = 3
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_68s2x"]
+script = ExtResource("1_e2yrb")
+line_event = 10
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[resource]
+script = ExtResource("4_eg846")
+lines = Array[ExtResource("1_e2yrb")]([SubResource("Resource_pkhvm"), SubResource("Resource_c82my"), SubResource("Resource_flgl1"), SubResource("Resource_68s2x")])
+metadata/_custom_type_script = "uid://icyiph7n2cnx"

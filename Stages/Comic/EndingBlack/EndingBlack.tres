@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=10 format=3 uid="uid://dk77gcvuuceen"]
+
+[ext_resource type="Script" uid="uid://bf5o4ybofcud1" path="res://Entities/Dialogue/DialogueStruct.gd" id="1_csmbt"]
+[ext_resource type="Texture2D" uid="uid://41jb6r3v0t2h" path="res://Assets/Drawn/Ending/blackending.png" id="2_csmbt"]
+[ext_resource type="Texture2D" uid="uid://d2vsvk8rea5gu" path="res://Assets/Drawn/Ending/blackending2.png" id="3_si0dt"]
+[ext_resource type="Script" uid="uid://icyiph7n2cnx" path="res://Entities/Dialogue/DialogueResource.gd" id="4_67rsh"]
+[ext_resource type="Texture2D" uid="uid://dvi8ogkuwj5u" path="res://Assets/black_texture.png" id="4_si0dt"]
+
+[sub_resource type="Resource" id="Resource_syp5o"]
+script = ExtResource("1_csmbt")
+panel = ExtResource("2_csmbt")
+line_event = 2
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_67rsh"]
+script = ExtResource("1_csmbt")
+text = "Black Ending ..."
+panel = ExtResource("3_si0dt")
+line_event = 3
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_5exyo"]
+script = ExtResource("1_csmbt")
+text = " "
+panel = ExtResource("4_si0dt")
+line_event = 3
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_csmbt"]
+script = ExtResource("1_csmbt")
+line_event = 10
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[resource]
+script = ExtResource("4_67rsh")
+lines = Array[ExtResource("1_csmbt")]([SubResource("Resource_syp5o"), SubResource("Resource_67rsh"), SubResource("Resource_5exyo"), SubResource("Resource_csmbt")])
+metadata/_custom_type_script = "uid://icyiph7n2cnx"

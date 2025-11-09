@@ -1,0 +1,11 @@
+[gd_scene load_steps=4 format=3 uid="uid://b6bqd1njjqc2d"]
+
+[ext_resource type="PackedScene" uid="uid://dcso33gyulutw" path="res://Stages/Comic/BaseComic.tscn" id="1_6dj6g"]
+[ext_resource type="Resource" uid="uid://dk77gcvuuceen" path="res://Stages/Comic/EndingBlack/EndingBlack.tres" id="2_78g7v"]
+[ext_resource type="Texture2D" uid="uid://dvi8ogkuwj5u" path="res://Assets/black_texture.png" id="3_4vpqy"]
+
+[node name="EndingBlack" instance=ExtResource("1_6dj6g")]
+dialogue = ExtResource("2_78g7v")
+
+[node name="Illustration" parent="PanelParent" index="0"]
+texture = ExtResource("3_4vpqy")

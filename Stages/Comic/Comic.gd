@@ -67,6 +67,8 @@ func _handle_line_events() -> void:
 				_direct_panel_change()
 			
 			_handle_text_area()
+		DialogueStruct.EVENTS.FINISH_GAME:
+			GameManager.go_to_main_menu()
 
 func _handle_text_area() -> void:
 	if is_typing == false:
@@ -111,7 +113,7 @@ func _new_panel_setup() -> void:
 
 func _new_panel_finished_animating() -> void:
 	illustration.texture = dialogue.lines[line_index].panel
-	illustration.self_modulate = Color(1.0, 1.0, 1.0, 1.0)
+	illustration.modulate = Color(1.0, 1.0, 1.0, 1.0)
 	is_event_ready = false
 	_handle_text_area()
 

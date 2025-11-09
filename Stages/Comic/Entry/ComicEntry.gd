@@ -12,7 +12,10 @@ var comics: Dictionary[String, PackedScene] = {
 	"red dimension" : preload("uid://c8d6gv0d0pgxm"),
 	"after red" : preload("uid://ujk27j4w3fcj"),
 	"blue dimension" : preload("uid://crrwdpxktjpli"),
-	"after blue" : preload("uid://bbaafck3owe7m")
+	"after blue" : preload("uid://bbaafck3owe7m"),
+	"ending comic" : preload("uid://c7v0xjouy6q2u"),
+	"ending black" : preload("uid://b6bqd1njjqc2d"),
+	"ending white" : preload("uid://bhjbo5vdnx208")
 }
 
 func _ready() -> void:
