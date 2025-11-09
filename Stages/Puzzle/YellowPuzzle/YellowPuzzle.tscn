@@ -116,7 +116,7 @@ polygon_points = PackedVector2Array(-73.333, 58.333, 1.667, -61.667, 76.667, 60)
 grid_id = 13
 
 [node name="PuzzleFragment" parent="." index="3" instance=ExtResource("11_kr038")]
-position = Vector2(942, 112)
+position = Vector2(301.00006, 496)
 sprite = ExtResource("12_kri80")
 polygon_points = PackedVector2Array(-23.333, -48.333, -95, 46.667, 95, -1.667)
 
@@ -127,7 +127,7 @@ polygon_points = PackedVector2Array(-55, -58.333, 56.667, -36.667, -13.333, 56.6
 fragment_id = 1
 
 [node name="PuzzleFragment3" parent="." index="5" instance=ExtResource("11_kr038")]
-position = Vector2(902, 426)
+position = Vector2(218, 398.00003)
 sprite = ExtResource("14_micsc")
 polygon_points = PackedVector2Array(-95, 8.333, 95, -40, 63.333, 18.333, -25, 45)
 fragment_id = 2
@@ -164,21 +164,21 @@ polygon_points = PackedVector2Array(-50, -20, 20, 50, 50, -51.667)
 fragment_id = 7
 
 [node name="PuzzleFragment9" parent="." index="11" instance=ExtResource("11_kr038")]
-position = Vector2(322, 575)
+position = Vector2(923, 129)
 rotation = 3.1415927
 sprite = ExtResource("18_xqsfd")
 polygon_points = PackedVector2Array(-50, -20, 20, 50, 50, -51.667)
 fragment_id = 8
 
 [node name="PuzzleFragment10" parent="." index="12" instance=ExtResource("11_kr038")]
-position = Vector2(935, 247)
+position = Vector2(951, 231.00002)
 rotation = 4.712389
 sprite = ExtResource("18_xqsfd")
 polygon_points = PackedVector2Array(-50, -20, 20, 50, 50, -51.667)
 fragment_id = 9
 
 [node name="PuzzleFragment11" parent="." index="13" instance=ExtResource("11_kr038")]
-position = Vector2(935, 247)
+position = Vector2(935, 341)
 sprite = ExtResource("19_w1qjb")
 polygon_points = PackedVector2Array(-73.333, 58.333, 1.667, -61.667, 76.667, 60)
 fragment_id = 10
@@ -191,14 +191,14 @@ polygon_points = PackedVector2Array(-73.333, 58.333, 1.667, -61.667, 76.667, 60)
 fragment_id = 11
 
 [node name="PuzzleFragment13" parent="." index="15" instance=ExtResource("11_kr038")]
-position = Vector2(1073, 243.00002)
+position = Vector2(818, 92.000015)
 rotation = 3.1415927
 sprite = ExtResource("19_w1qjb")
 polygon_points = PackedVector2Array(-73.333, 58.333, 1.667, -61.667, 76.667, 60)
 fragment_id = 12
 
 [node name="PuzzleFragment14" parent="." index="16" instance=ExtResource("11_kr038")]
-position = Vector2(900, 581)
+position = Vector2(860.00006, 482)
 rotation = 4.712389
 sprite = ExtResource("19_w1qjb")
 polygon_points = PackedVector2Array(-73.333, 58.333, 1.667, -61.667, 76.667, 60)

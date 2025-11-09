@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=33 format=3 uid="uid://ssks6i74h5lv"]
 
 [ext_resource type="Script" uid="uid://bf5o4ybofcud1" path="res://Entities/Dialogue/DialogueStruct.gd" id="1_aqxtl"]
-[ext_resource type="Texture2D" uid="uid://ddyfmm1yn6c0h" path="res://Assets/Drawn/Yellow Dimension/yellowd1.png" id="2_3qtup"]
+[ext_resource type="Texture2D" uid="uid://ddyfmm1yn6c0h" path="res://Assets/Drawn/Dimension/yellowd1.png" id="2_3qtup"]
 [ext_resource type="Script" uid="uid://icyiph7n2cnx" path="res://Entities/Dialogue/DialogueResource.gd" id="4_gdlux"]
 
 [sub_resource type="Resource" id="Resource_e5mtr"]

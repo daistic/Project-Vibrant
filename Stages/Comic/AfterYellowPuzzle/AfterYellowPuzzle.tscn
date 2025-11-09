@@ -6,6 +6,7 @@
 
 [node name="AfterYellowPuzzle" instance=ExtResource("1_3b8n2")]
 dialogue = ExtResource("2_sv3tu")
+next_scene_key = "comic:red dimension"
 
 [node name="Illustration" parent="PanelParent" index="0"]
 texture = ExtResource("3_os0ss")

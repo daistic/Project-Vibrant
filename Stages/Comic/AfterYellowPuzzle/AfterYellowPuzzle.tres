@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=18 format=3 uid="uid://c8rd5s6viee4t"]
 
 [ext_resource type="Script" uid="uid://bf5o4ybofcud1" path="res://Entities/Dialogue/DialogueStruct.gd" id="1_ckdf5"]
-[ext_resource type="Texture2D" uid="uid://bwffry8gqsx8m" path="res://Assets/Drawn/Yellow Dimension/yellowd2.png" id="2_kkl38"]
-[ext_resource type="Texture2D" uid="uid://cohft6img6xwp" path="res://Assets/Drawn/Yellow Dimension/yellowd3.png" id="3_ckdf5"]
+[ext_resource type="Texture2D" uid="uid://bwffry8gqsx8m" path="res://Assets/Drawn/Dimension/yellowd2.png" id="2_kkl38"]
+[ext_resource type="Texture2D" uid="uid://cohft6img6xwp" path="res://Assets/Drawn/Dimension/yellowd3.png" id="3_ckdf5"]
 [ext_resource type="Texture2D" uid="uid://dvi8ogkuwj5u" path="res://Assets/black_texture.png" id="3_vf3ba"]
 [ext_resource type="Script" uid="uid://icyiph7n2cnx" path="res://Entities/Dialogue/DialogueResource.gd" id="4_000bf"]
 

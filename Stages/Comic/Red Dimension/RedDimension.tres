@@ -1,0 +1,100 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=19 format=3 uid="uid://dmromn6pa2ijf"]
+
+[ext_resource type="Script" uid="uid://bf5o4ybofcud1" path="res://Entities/Dialogue/DialogueStruct.gd" id="1_r0mpu"]
+[ext_resource type="Texture2D" uid="uid://be1jlkm1bddb7" path="res://Assets/Drawn/Dimension/redd1.png" id="2_t2v0h"]
+[ext_resource type="Script" uid="uid://icyiph7n2cnx" path="res://Entities/Dialogue/DialogueResource.gd" id="4_rumim"]
+
+[sub_resource type="Resource" id="Resource_r0mpu"]
+script = ExtResource("1_r0mpu")
+text = "“...”"
+panel = ExtResource("2_t2v0h")
+line_event = 3
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_l2v7j"]
+script = ExtResource("1_r0mpu")
+speaker_name = "Red"
+text = "“...I’ve heard.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_6gbg0"]
+script = ExtResource("1_r0mpu")
+speaker_name = "Red"
+text = "“...But…”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_rumim"]
+script = ExtResource("1_r0mpu")
+speaker_name = "Red"
+text = "“No worries!”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_whvwk"]
+script = ExtResource("1_r0mpu")
+speaker_name = "Red"
+text = "“You might be having a bad day today and we’re perfectly understanding of it!”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_2i5db"]
+script = ExtResource("1_r0mpu")
+speaker_name = "Red"
+text = "“Afterall, our love for you is endless my dear friend!”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_wk0mf"]
+script = ExtResource("1_r0mpu")
+speaker_name = "Red"
+text = "“So, I’m all ears for you!”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_3th3f"]
+script = ExtResource("1_r0mpu")
+speaker_name = "Red"
+text = "“...oh?”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_d4tp8"]
+script = ExtResource("1_r0mpu")
+speaker_name = "Red"
+text = "“Are you surprised by my reaction?”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_cbwxp"]
+script = ExtResource("1_r0mpu")
+speaker_name = "Red"
+text = "“Hehee, I am no longer the easily irritated, full of anger person you know anymore!”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_sob1e"]
+script = ExtResource("1_r0mpu")
+speaker_name = "Red"
+text = "“Sure what you did to yellow was awful but…”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_27vsl"]
+script = ExtResource("1_r0mpu")
+speaker_name = "Red"
+text = "“You can always apologize! It is never too late!”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_uir6t"]
+script = ExtResource("1_r0mpu")
+line_event = 8
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_7ybxy"]
+script = ExtResource("1_r0mpu")
+speaker_name = "Red"
+text = "“Black- why?-”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_oytsp"]
+script = ExtResource("1_r0mpu")
+panel = ExtResource("2_t2v0h")
+line_event = 5
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[resource]
+script = ExtResource("4_rumim")
+lines = Array[ExtResource("1_r0mpu")]([SubResource("Resource_r0mpu"), SubResource("Resource_l2v7j"), SubResource("Resource_6gbg0"), SubResource("Resource_rumim"), SubResource("Resource_whvwk"), SubResource("Resource_2i5db"), SubResource("Resource_wk0mf"), SubResource("Resource_3th3f"), SubResource("Resource_d4tp8"), SubResource("Resource_cbwxp"), SubResource("Resource_sob1e"), SubResource("Resource_27vsl"), SubResource("Resource_uir6t"), SubResource("Resource_7ybxy"), SubResource("Resource_oytsp")])
+metadata/_custom_type_script = "uid://icyiph7n2cnx"
