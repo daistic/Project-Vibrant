@@ -2,7 +2,8 @@ extends Node2D
 
 var puzzles: Dictionary[String, PackedScene] = {
 	"yellow puzzle" : preload("uid://c20l2qah52w7m"),
-	"red puzzle" : preload("uid://cd7exattou3g7")
+	"red puzzle" : preload("uid://cd7exattou3g7"),
+	"blue puzzle": preload("uid://b0s85887i47yy")
 }
 
 func _ready() -> void:

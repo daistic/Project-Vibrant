@@ -1,10 +1,11 @@
-[gd_resource type="Resource" script_class="DialogueResource" load_steps=22 format=3 uid="uid://bakt3j8rbwdun"]
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=24 format=3 uid="uid://bakt3j8rbwdun"]
 
 [ext_resource type="Script" uid="uid://bf5o4ybofcud1" path="res://Entities/Dialogue/DialogueStruct.gd" id="1_6x57q"]
 [ext_resource type="Texture2D" uid="uid://dwm2l2rgg0xk0" path="res://Assets/Drawn/Dimension/redd3.png" id="2_3vcj5"]
 [ext_resource type="Texture2D" uid="uid://d372pit31ns5a" path="res://Assets/Drawn/Dimension/redd4.png" id="3_66uht"]
 [ext_resource type="Texture2D" uid="uid://bv5nig1nxdenj" path="res://Assets/Drawn/Dimension/redd2.png" id="4_66uht"]
 [ext_resource type="Script" uid="uid://icyiph7n2cnx" path="res://Entities/Dialogue/DialogueResource.gd" id="4_tl0ln"]
+[ext_resource type="Texture2D" uid="uid://dvi8ogkuwj5u" path="res://Assets/black_texture.png" id="4_wuphy"]
 
 [sub_resource type="Resource" id="Resource_6x57q"]
 script = ExtResource("1_6x57q")
@@ -103,7 +104,14 @@ script = ExtResource("1_6x57q")
 text = "“1 more to go”"
 metadata/_custom_type_script = "uid://bf5o4ybofcud1"
 
+[sub_resource type="Resource" id="Resource_we50l"]
+script = ExtResource("1_6x57q")
+text = " "
+panel = ExtResource("4_wuphy")
+line_event = 3
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
 [resource]
 script = ExtResource("4_tl0ln")
-lines = Array[ExtResource("1_6x57q")]([SubResource("Resource_6x57q"), SubResource("Resource_66uht"), SubResource("Resource_wuphy"), SubResource("Resource_tl0ln"), SubResource("Resource_aa1h2"), SubResource("Resource_6hgtr"), SubResource("Resource_8crqh"), SubResource("Resource_hchtd"), SubResource("Resource_4cgin"), SubResource("Resource_asx1x"), SubResource("Resource_tka7u"), SubResource("Resource_qrxpu"), SubResource("Resource_n03h1"), SubResource("Resource_vmuwy"), SubResource("Resource_4ya5j"), SubResource("Resource_vjjm6")])
+lines = Array[ExtResource("1_6x57q")]([SubResource("Resource_6x57q"), SubResource("Resource_66uht"), SubResource("Resource_wuphy"), SubResource("Resource_tl0ln"), SubResource("Resource_aa1h2"), SubResource("Resource_6hgtr"), SubResource("Resource_8crqh"), SubResource("Resource_hchtd"), SubResource("Resource_4cgin"), SubResource("Resource_asx1x"), SubResource("Resource_tka7u"), SubResource("Resource_qrxpu"), SubResource("Resource_n03h1"), SubResource("Resource_vmuwy"), SubResource("Resource_4ya5j"), SubResource("Resource_vjjm6"), SubResource("Resource_we50l")])
 metadata/_custom_type_script = "uid://icyiph7n2cnx"

@@ -1,0 +1,139 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=26 format=3 uid="uid://5a45tpsedhm7"]
+
+[ext_resource type="Script" uid="uid://bf5o4ybofcud1" path="res://Entities/Dialogue/DialogueStruct.gd" id="1_gyqj5"]
+[ext_resource type="Texture2D" uid="uid://ck8fyvuoc0rrq" path="res://Assets/Drawn/Dimension/blued1.png" id="2_ba6cl"]
+[ext_resource type="Script" uid="uid://icyiph7n2cnx" path="res://Entities/Dialogue/DialogueResource.gd" id="4_3ut2t"]
+
+[sub_resource type="Resource" id="Resource_gyqj5"]
+script = ExtResource("1_gyqj5")
+text = "“...”"
+panel = ExtResource("2_ba6cl")
+line_event = 3
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_nk8vi"]
+script = ExtResource("1_gyqj5")
+text = "“..........................”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_5y0xh"]
+script = ExtResource("1_gyqj5")
+speaker_name = "Blue"
+text = "“...it’s a strange situation huh”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_ba6cl"]
+script = ExtResource("1_gyqj5")
+speaker_name = "Blue"
+text = "“Despite what happened to yellow and red…”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_3ut2t"]
+script = ExtResource("1_gyqj5")
+speaker_name = "Blue"
+text = "“...I stay calm and unfazed!”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_4dp0q"]
+script = ExtResource("1_gyqj5")
+speaker_name = "Blue"
+text = "“I don’t know what you’re on but…\"[br]“Are you sure about this?”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_ke1jc"]
+script = ExtResource("1_gyqj5")
+text = "“........”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_4vysm"]
+script = ExtResource("1_gyqj5")
+speaker_name = "Blue"
+text = "“...Do you remember?”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_ae5xu"]
+script = ExtResource("1_gyqj5")
+speaker_name = "Blue"
+text = "“Back then, I would feel depressed, sad, I would lock myself in here for as much as I can, isolated.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_x77fw"]
+script = ExtResource("1_gyqj5")
+speaker_name = "Blue"
+text = "“Due to that, red would get angry. Telling me that I must come out of my glass dimension eventually.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_skfkd"]
+script = ExtResource("1_gyqj5")
+speaker_name = "Blue"
+text = "“And yellow would get scared of red.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_yfqrj"]
+script = ExtResource("1_gyqj5")
+speaker_name = "Blue"
+text = "“Yellow would try to please anyone.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_26syc"]
+script = ExtResource("1_gyqj5")
+speaker_name = "Blue"
+text = "“Afterall, yellow is a representation of cowardice, cautions, fear, anxiety.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_ma2bs"]
+script = ExtResource("1_gyqj5")
+speaker_name = "Blue"
+text = "“...sometimes, even [b]white[/b] had to calm things down between us.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_cr5e1"]
+script = ExtResource("1_gyqj5")
+text = "“...........................”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_n5g14"]
+script = ExtResource("1_gyqj5")
+speaker_name = "Blue"
+text = "“...However, things started to change after your absence in the piece.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_sbq1u"]
+script = ExtResource("1_gyqj5")
+speaker_name = "Blue"
+text = "“I started to go out.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_ud6jc"]
+script = ExtResource("1_gyqj5")
+speaker_name = "Blue"
+text = "“Red doesn’t yell.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_omo10"]
+script = ExtResource("1_gyqj5")
+speaker_name = "Blue"
+text = "“Yellow isn’t anxious.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_qwvka"]
+script = ExtResource("1_gyqj5")
+speaker_name = "Blue"
+text = "“...so… are you sure about this?”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_46roa"]
+script = ExtResource("1_gyqj5")
+line_event = 8
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_2ffw3"]
+script = ExtResource("1_gyqj5")
+panel = ExtResource("2_ba6cl")
+line_event = 5
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[resource]
+script = ExtResource("4_3ut2t")
+lines = Array[ExtResource("1_gyqj5")]([SubResource("Resource_gyqj5"), SubResource("Resource_nk8vi"), SubResource("Resource_5y0xh"), SubResource("Resource_ba6cl"), SubResource("Resource_3ut2t"), SubResource("Resource_4dp0q"), SubResource("Resource_ke1jc"), SubResource("Resource_4vysm"), SubResource("Resource_ae5xu"), SubResource("Resource_x77fw"), SubResource("Resource_skfkd"), SubResource("Resource_yfqrj"), SubResource("Resource_26syc"), SubResource("Resource_ma2bs"), SubResource("Resource_cr5e1"), SubResource("Resource_n5g14"), SubResource("Resource_sbq1u"), SubResource("Resource_ud6jc"), SubResource("Resource_omo10"), SubResource("Resource_qwvka"), SubResource("Resource_46roa"), SubResource("Resource_2ffw3")])
+metadata/_custom_type_script = "uid://icyiph7n2cnx"

@@ -1,0 +1,154 @@
+[gd_scene load_steps=24 format=3 uid="uid://b0s85887i47yy"]
+
+[ext_resource type="PackedScene" uid="uid://fvbglxmndqo2" path="res://Stages/Puzzle/PuzzleBase.tscn" id="1_k7mtm"]
+[ext_resource type="Texture2D" uid="uid://bq2vfyp86qqx0" path="res://Assets/Puzzles/Blue/Group 30.png" id="2_pkd2o"]
+[ext_resource type="PackedScene" uid="uid://tm8c3e1mkgqx" path="res://Entities/PuzzleGrid/PuzzleGrid.tscn" id="3_6ok3d"]
+[ext_resource type="Texture2D" uid="uid://trt1hktsg05l" path="res://Assets/Puzzles/Blue/Grids/Group 58.png" id="4_5audd"]
+[ext_resource type="Texture2D" uid="uid://bslwiehnjgmpy" path="res://Assets/Puzzles/Blue/Grids/Group 60.png" id="5_fd3x0"]
+[ext_resource type="Texture2D" uid="uid://c4sp5h2qojslh" path="res://Assets/Puzzles/Blue/Grids/Group 61.png" id="6_j8qkc"]
+[ext_resource type="Texture2D" uid="uid://c8iw081rk6tui" path="res://Assets/Puzzles/Blue/Grids/Group 62.png" id="7_x625w"]
+[ext_resource type="Texture2D" uid="uid://bar5wdxjghgnw" path="res://Assets/Puzzles/Blue/Grids/Group 64.png" id="9_rb73b"]
+[ext_resource type="Texture2D" uid="uid://dn2803k2fpj53" path="res://Assets/Puzzles/Blue/Grids/Group 65.png" id="10_u5krs"]
+[ext_resource type="Texture2D" uid="uid://dmu5dsxouhme0" path="res://Assets/Puzzles/Blue/Grids/Group 66.png" id="11_wi7wj"]
+[ext_resource type="Texture2D" uid="uid://6s0emyi2d3t4" path="res://Assets/Puzzles/Blue/Grids/Group 67.png" id="12_ch1oy"]
+[ext_resource type="PackedScene" uid="uid://fri42p2bfp5d" path="res://Entities/Puzzle Fragment/PuzzleFragment.tscn" id="13_5audd"]
+[ext_resource type="Texture2D" uid="uid://calqabawk2484" path="res://Assets/Puzzles/Blue/Grids/Group 68.png" id="13_k372n"]
+[ext_resource type="Texture2D" uid="uid://ctlkp3byy5qbc" path="res://Assets/Puzzles/Blue/Pieces/Group 69.png" id="14_fd3x0"]
+[ext_resource type="Texture2D" uid="uid://jjuspxo2pkur" path="res://Assets/Puzzles/Blue/Pieces/Group 59.png" id="15_j8qkc"]
+[ext_resource type="Texture2D" uid="uid://v4dxuob430th" path="res://Assets/Puzzles/Blue/Pieces/Group 56.png" id="16_fd3x0"]
+[ext_resource type="Texture2D" uid="uid://ueeeqee57s0a" path="res://Assets/Puzzles/Blue/Pieces/Group 57.png" id="17_j8qkc"]
+[ext_resource type="Texture2D" uid="uid://dhkqaa2wxrge0" path="res://Assets/Puzzles/Blue/Pieces/Group 49.png" id="18_tef7g"]
+[ext_resource type="Texture2D" uid="uid://cj8k48w7bccow" path="res://Assets/Puzzles/Blue/Pieces/Group 50.png" id="19_rb73b"]
+[ext_resource type="Texture2D" uid="uid://b06r8y7slddio" path="res://Assets/Puzzles/Blue/Pieces/Group 51.png" id="20_u5krs"]
+[ext_resource type="Texture2D" uid="uid://cupvpwybqhl4g" path="res://Assets/Puzzles/Blue/Pieces/Group 52.png" id="21_wi7wj"]
+[ext_resource type="Texture2D" uid="uid://dv0remodsbdyk" path="res://Assets/Puzzles/Blue/Pieces/Group 53.png" id="22_wi7wj"]
+[ext_resource type="Texture2D" uid="uid://dugvfwpdkucoo" path="res://Assets/Puzzles/Blue/Pieces/Group 54.png" id="23_ch1oy"]
+
+[node name="BluePuzzle" node_paths=PackedStringArray("puzzle_grids") instance=ExtResource("1_k7mtm")]
+puzzle_grids = [NodePath("Grids/PuzzleGrid"), NodePath("Grids/PuzzleGrid2"), NodePath("Grids/PuzzleGrid3"), NodePath("Grids/PuzzleGrid4"), NodePath("Grids/PuzzleGrid5"), NodePath("Grids/PuzzleGrid6"), NodePath("Grids/PuzzleGrid7"), NodePath("Grids/PuzzleGrid8"), NodePath("Grids/PuzzleGrid9"), NodePath("Grids/PuzzleGrid10")]
+next_scene_key = "comic:after blue"
+
+[node name="Group30" type="Sprite2D" parent="." index="1"]
+z_index = -1
+position = Vector2(570.3, 313.2)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_pkd2o")
+
+[node name="Grids" type="Node2D" parent="." index="2"]
+
+[node name="PuzzleGrid" parent="Grids" index="0" instance=ExtResource("3_6ok3d")]
+position = Vector2(653, 251.00002)
+sprite = ExtResource("4_5audd")
+polygon_points = PackedVector2Array(-95, -13.333313, -61.666656, -59.999985, 41.666687, -54.999985, 96.66669, 48.333344, 50, 56.666687)
+
+[node name="PuzzleGrid2" parent="Grids" index="1" instance=ExtResource("3_6ok3d")]
+position = Vector2(676, 330)
+sprite = ExtResource("5_fd3x0")
+polygon_points = PackedVector2Array(-71.66666, 6.666687, 8.333313, 68.33334, 108.33331, -36.666656, 33.333313, -81.66666)
+grid_id = 1
+
+[node name="PuzzleGrid3" parent="Grids" index="2" instance=ExtResource("3_6ok3d")]
+position = Vector2(630, 289)
+sprite = ExtResource("6_j8qkc")
+polygon_points = PackedVector2Array(-86.66666, -38.333313, 36.666687, 83.33334, 66.66669, 45, 15, -31.666656, -55, -69.999985)
+grid_id = 2
+
+[node name="PuzzleGrid4" parent="Grids" index="3" instance=ExtResource("3_6ok3d")]
+position = Vector2(655, 278)
+sprite = ExtResource("7_x625w")
+polygon_points = PackedVector2Array(-78.33331, -41.666656, 43.333313, 81.66669, 108.33331, 31.666687, -13.333313, -86.66666)
+grid_id = 3
+
+[node name="PuzzleGrid5" parent="Grids" index="4" instance=ExtResource("3_6ok3d")]
+position = Vector2(616, 430)
+polygon_points = PackedVector2Array(-91.66666, 98.33334, -15, -41.666656, 73.33331, -114.999985, 101.66669, -89.999985, -83.33331, 113.33334)
+grid_id = 4
+
+[node name="PuzzleGrid6" parent="Grids" index="5" instance=ExtResource("3_6ok3d")]
+position = Vector2(581, 419.00003)
+sprite = ExtResource("9_rb73b")
+polygon_points = PackedVector2Array(-103.33331, 126.66669, 121.66669, -96.66666, 95, -129.99998, -123.33331, 105)
+grid_id = 5
+
+[node name="PuzzleGrid7" parent="Grids" index="6" instance=ExtResource("3_6ok3d")]
+position = Vector2(530, 398)
+sprite = ExtResource("10_u5krs")
+polygon_points = PackedVector2Array(-150, 98.33334, -75, 23.333344, 130, -113.33331, 153.33331, -78.33331, -55, 73.33334, -136.66666, 108.33334)
+grid_id = 6
+
+[node name="PuzzleGrid8" parent="Grids" index="7" instance=ExtResource("3_6ok3d")]
+position = Vector2(531, 364)
+sprite = ExtResource("11_wi7wj")
+polygon_points = PackedVector2Array(-126.66666, 73.33334, 1.666687, -44.999985, 110, -84.999985, 128.33331, -69.999985, -121.66666, 90)
+grid_id = 7
+
+[node name="PuzzleGrid9" parent="Grids" index="8" instance=ExtResource("3_6ok3d")]
+position = Vector2(505, 342)
+sprite = ExtResource("12_ch1oy")
+polygon_points = PackedVector2Array(-146.66666, 85, -105, 11.666687, 120, -93.33331, 148.33331, -69.999985)
+grid_id = 8
+
+[node name="PuzzleGrid10" parent="Grids" index="9" instance=ExtResource("3_6ok3d")]
+position = Vector2(506, 288)
+sprite = ExtResource("13_k372n")
+polygon_points = PackedVector2Array(-113.33331, 68.33334, -140, 31.666687, 121.66669, -58.333313, 133.33331, -29.999985)
+grid_id = 9
+
+[node name="PuzzleFragment" parent="." index="3" instance=ExtResource("13_5audd")]
+position = Vector2(921, 129)
+sprite = ExtResource("14_fd3x0")
+polygon_points = PackedVector2Array(-95, -13.333313, -61.666656, -59.999985, 41.666687, -54.999985, 96.66669, 48.333344, 50, 56.666687)
+
+[node name="PuzzleFragment2" parent="." index="4" instance=ExtResource("13_5audd")]
+position = Vector2(138, 166)
+sprite = ExtResource("15_j8qkc")
+polygon_points = PackedVector2Array(-71.66666, 6.666687, 8.333313, 68.33334, 108.33331, -36.666656, 33.333313, -81.66666)
+fragment_id = 1
+
+[node name="PuzzleFragment3" parent="." index="5" instance=ExtResource("13_5audd")]
+position = Vector2(134, 338)
+sprite = ExtResource("16_fd3x0")
+polygon_points = PackedVector2Array(-86.66666, -38.333313, 36.666687, 83.33334, 66.66669, 45, 15, -31.666656, -55, -69.999985)
+fragment_id = 2
+
+[node name="PuzzleFragment4" parent="." index="6" instance=ExtResource("13_5audd")]
+position = Vector2(930, 318.00003)
+sprite = ExtResource("17_j8qkc")
+polygon_points = PackedVector2Array(-78.33331, -41.666656, 43.333313, 81.66669, 108.33331, 31.666687, -13.333313, -86.66666)
+fragment_id = 3
+
+[node name="PuzzleFragment5" parent="." index="7" instance=ExtResource("13_5audd")]
+position = Vector2(264.00006, 131.00003)
+sprite = ExtResource("18_tef7g")
+polygon_points = PackedVector2Array(-91.66666, 98.33334, -15, -41.666656, 73.33331, -114.999985, 101.66669, -89.999985, -83.33331, 113.33334)
+fragment_id = 4
+
+[node name="PuzzleFragment6" parent="." index="8" instance=ExtResource("13_5audd")]
+position = Vector2(1039, 449.00003)
+sprite = ExtResource("19_rb73b")
+polygon_points = PackedVector2Array(-103.33331, 126.66669, 121.66669, -96.66666, 95, -129.99998, -123.33331, 105)
+fragment_id = 5
+
+[node name="PuzzleFragment7" parent="." index="9" instance=ExtResource("13_5audd")]
+position = Vector2(1041, 203)
+sprite = ExtResource("20_u5krs")
+polygon_points = PackedVector2Array(-150, 98.33334, -75, 23.333344, 130, -113.33331, 153.33331, -78.33331, -55, 73.33334, -136.66666, 108.33334)
+fragment_id = 6
+
+[node name="PuzzleFragment8" parent="." index="10" instance=ExtResource("13_5audd")]
+position = Vector2(121, 505.00003)
+sprite = ExtResource("21_wi7wj")
+polygon_points = PackedVector2Array(-126.66666, 73.33334, 1.666687, -44.999985, 110, -84.999985, 128.33331, -69.999985, -121.66666, 90)
+fragment_id = 7
+
+[node name="PuzzleFragment9" parent="." index="11" instance=ExtResource("13_5audd")]
+position = Vector2(258, 378.00003)
+sprite = ExtResource("22_wi7wj")
+polygon_points = PackedVector2Array(-146.66666, 85, -105, 11.666687, 120, -93.33331, 148.33331, -69.999985)
+fragment_id = 8
+
+[node name="PuzzleFragment10" parent="." index="12" instance=ExtResource("13_5audd")]
+position = Vector2(907, 460.00003)
+sprite = ExtResource("23_ch1oy")
+polygon_points = PackedVector2Array(-113.33331, 68.33334, -140, 31.666687, 121.66669, -58.333313, 133.33331, -29.999985)
+fragment_id = 9

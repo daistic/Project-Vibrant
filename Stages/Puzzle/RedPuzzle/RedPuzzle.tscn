@@ -31,7 +31,7 @@ next_scene_key = "comic:after red"
 
 [node name="Group27(2)" type="Sprite2D" parent="." index="1"]
 z_index = -1
-position = Vector2(560, 320)
+position = Vector2(561, 320)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("2_uxx27")
 

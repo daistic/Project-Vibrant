@@ -1,0 +1,98 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=21 format=3 uid="uid://po7vd2bfi66r"]
+
+[ext_resource type="Script" uid="uid://bf5o4ybofcud1" path="res://Entities/Dialogue/DialogueStruct.gd" id="1_iwric"]
+[ext_resource type="Texture2D" uid="uid://csf8rbpeoa4ds" path="res://Assets/Drawn/Dimension/blued3.png" id="2_iwric"]
+[ext_resource type="Texture2D" uid="uid://dwbxap7w541mv" path="res://Assets/Drawn/Dimension/blued4.png" id="3_csehh"]
+[ext_resource type="Script" uid="uid://icyiph7n2cnx" path="res://Entities/Dialogue/DialogueResource.gd" id="4_b26hq"]
+[ext_resource type="Texture2D" uid="uid://q4151nxpy15p" path="res://Assets/Drawn/Dimension/blued2.png" id="4_twt80"]
+[ext_resource type="Texture2D" uid="uid://dvi8ogkuwj5u" path="res://Assets/black_texture.png" id="5_b26hq"]
+
+[sub_resource type="Resource" id="Resource_twt80"]
+script = ExtResource("1_iwric")
+text = "“..........”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_b26hq"]
+script = ExtResource("1_iwric")
+text = "“...............................”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_gfcgq"]
+script = ExtResource("1_iwric")
+speaker_name = "Blue"
+text = "“....sorry..”"
+panel = ExtResource("2_iwric")
+line_event = 3
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_4o4hb"]
+script = ExtResource("1_iwric")
+speaker_name = "Blue"
+text = "“In the end I couldn’t stop you.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_dwyfi"]
+script = ExtResource("1_iwric")
+text = "“................”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_klsp1"]
+script = ExtResource("1_iwric")
+speaker_name = "Blue"
+text = "“....are you… going to continue?...”"
+panel = ExtResource("3_csehh")
+line_event = 3
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_mic4e"]
+script = ExtResource("1_iwric")
+speaker_name = "Blue"
+text = "“...all that’s left for you is the [b]last stained glass[/b]”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_e3o2k"]
+script = ExtResource("1_iwric")
+speaker_name = "Blue"
+text = "“...then, not just us, but [b]everyone[/b] in the world will be able to feel sadness….”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_0eipo"]
+script = ExtResource("1_iwric")
+speaker_name = "Blue"
+text = "“....heh…”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_mmeeb"]
+script = ExtResource("1_iwric")
+speaker_name = "Blue"
+text = "“.........................heh…”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_d135l"]
+script = ExtResource("1_iwric")
+text = "“...”"
+panel = ExtResource("4_twt80")
+line_event = 3
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_n5bxk"]
+script = ExtResource("1_iwric")
+text = "“..............................”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_0j7u3"]
+script = ExtResource("1_iwric")
+text = "“All that’s left… is [b]our[/b] piece.”"
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[sub_resource type="Resource" id="Resource_unwga"]
+script = ExtResource("1_iwric")
+text = " "
+panel = ExtResource("5_b26hq")
+line_event = 3
+metadata/_custom_type_script = "uid://bf5o4ybofcud1"
+
+[resource]
+script = ExtResource("4_b26hq")
+lines = Array[ExtResource("1_iwric")]([SubResource("Resource_twt80"), SubResource("Resource_b26hq"), SubResource("Resource_gfcgq"), SubResource("Resource_4o4hb"), SubResource("Resource_dwyfi"), SubResource("Resource_klsp1"), SubResource("Resource_mic4e"), SubResource("Resource_e3o2k"), SubResource("Resource_0eipo"), SubResource("Resource_mmeeb"), SubResource("Resource_d135l"), SubResource("Resource_n5bxk"), SubResource("Resource_0j7u3"), SubResource("Resource_unwga")])
+metadata/_custom_type_script = "uid://icyiph7n2cnx"
